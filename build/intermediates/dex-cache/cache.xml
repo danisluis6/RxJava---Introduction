@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/lorence/.android/build-cache/88513930a62cd54d6557bedeb4925a1444232ea9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/classes_d20e15de2262259d749889ca853a664bf50870cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lorence/.gradle/wrapper/dists/gradle-2.14.1-all/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.6/2586312cd2b8a511e4c6236736f5a039fc0f2273/rxjava-1.1.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2586312cd2b8a511e4c6236736f5a039fc0f2273">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/rxjava-1.1.6_9064d8b1f924f3482869ba40dbeff119745859dc.jar" />
+    </item>
+
+</items>

@@ -7,6 +7,13 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import rx.Observable;
+import rx.Observer;
+import rx.Subscription;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Action1;
+import rx.functions.Func1;
+import rx.schedulers.Schedulers;
 
 /*
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -115,6 +122,79 @@ public class DemoActivity extends AppCompatActivity {
     // operations to prevent the jarring behavior of controls going away
     // while interacting with the UI.
     findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+
+    // Create an Observable that emits 1 to 5
+    Observable.just(1, 2, 3, 4, 5);
+
+    // Sometimes we want to refine specific event only to be emitted by observable
+    // Solution in here: Using another operator called filter()
+    Observable<Integer> observable = Observable
+        .just(1, 2, 3, 4, 5)
+        .filter(new Func1<Integer, Boolean>() {
+          @Override
+          public Boolean call(Integer integer) {
+            //check if the number is odd? If the number is odd return true, to emmit that object.
+            return integer % 2 != 0;
+          }
+        });
+
+    // Create observer
+    /*
+     * In RxJava there are three callbacks you are going to receive in an observer.
+     *
+      * onNext() : This method will be called when there is any new data emitted by the observer.
+      * The object that is emitted by the observable can be found in argument parameters of this callback.
+      *
+      * onError() : You will receive this callback whenever there is any error occurred on observable.
+      * (After all the world is not perfect.)
+      *
+      * onComplete() : Whenever observable is done with emitting the data streams, you will receive this callback.
+      * This indicates that there is no more data to emit.
+     */
+
+    Observer<Integer> observer = new Observer<Integer>() {
+      @Override
+      public void onCompleted() {
+        System.out.println("All data emitted.");
+      }
+
+      @Override
+      public void onError(Throwable e) {
+        System.out.println("Error received: " + e.getMessage());
+      }
+
+      @Override
+      public void onNext(Integer integer) {
+        System.out.println("New data received: " + integer);
+      }
+    };
+
+    /**
+     * In many cases you don’t care about onCompleted() or onError(). So instead of using Observer<T>
+     * we can use a simpler class to define what to do during onNext() using Action1 class.
+     */
+
+    Action1<Integer> onNextAction = new Action1<Integer>() {
+      @Override
+      public void call(Integer s) { // This is equivalent to onNext()
+        System.out.println(s);
+      }
+    };
+
+    /**
+     * Here, onCall() is equivalent to onNext() in our first approach.
+     */
+    Subscription subscription = observable
+        .subscribeOn(Schedulers.io())               // Observable will run on IO thread.
+        .observeOn(AndroidSchedulers.mainThread())  // Observer will run on main thread.
+        .subscribe(observer);                       // subscribe the observer
+
+    /*
+     * Unsubscribe:
+      *
+      * In android this is essential that you call unsubscribe in onDesrtoy() of your activity/fragment to
+      * release the connection between observer and observable. Otherwise, it may call memory leak.
+     */
   }
 
   @Override
