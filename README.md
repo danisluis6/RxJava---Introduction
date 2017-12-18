@@ -10,10 +10,9 @@
 
 > **Schedule** #[Schedule](#schedule)
 
-# [Recycler View](#recycler-view)
-## [Load More](#load-more)
-### [Index Page](#index-page)
-  - [Widget Android](#widget-android)
+# [JavaRx](#javarx)
+## [Introduction](#introduction)
+  - [Characteristic](#characteristic)
   - [EditText](#edittext)
     - [How to make editText without line at bottom](#how-to-make-edittext-without-line-at-bottom)
     - [How to create EditText with rounded corners](#how-to-create-edittext-with-rounded-corners)
@@ -28,12 +27,17 @@
 ### [Total Page](#total-page)
 ### [Check Load More](#check-load-more)
 
-## Recycler View
-## Check Load More
-   > Update list in Adapter. We should upgrade value of isLoadMore = false at onSuccess();
+# JavaRx
+## Introduction
+### Characteristic
+   > Functional reactive programming is very hard to understand when you come from Object Oriented Programming
+   > For me: I need to have some articles or a series of articles to help me understand the basic concept of Reactive Programming
+   > Question 1: What reactive is coming such a big thing in Android?
+   > Question 2: Find a reason why we need to use RxJava. Maybe, we already have some prolems for issues occurs.
+   
+    The evaluation matrix
+<img src = "" alt = "The evaluation matrix">
 
-    <color name="White">#FFFFFF</color>
- 
 ## How to make editText without line at bottom
 
 ## Schedule
