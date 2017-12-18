@@ -31,8 +31,11 @@
 ## Introduction
 ### Characteristic
    > Functional reactive programming is very hard to understand when you come from Object Oriented Programming
+   
    > For me: I need to have some articles or a series of articles to help me understand the basic concept of Reactive Programming
+   
    > Question 1: What reactive is coming such a big thing in Android?
+   
    > Question 2: Find a reason why we need to use RxJava. Maybe, we already have some prolems for issues occurs.
    
     The evaluation matrix
