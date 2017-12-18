@@ -1,17 +1,17 @@
 package com.example.lorence.learnrxandroid;
 
 import android.annotation.SuppressLint;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import rx.Observable;
 import rx.Observer;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Action1;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
@@ -24,8 +24,8 @@ import rx.schedulers.Schedulers;
  * @Run: https://github.com/ReactiveX/RxAndroid#binaries
  * Find the lastest version from here
  *
- * @Run:
- *
+ * @Run: https://medium.com/@kevalpatel2106/code-your-next-android-app-using-rxjava-d1db30ac9fcc
+ * Start with RxJava
  */
 @SuppressWarnings("ALL")
 public class DemoActivity extends AppCompatActivity {
@@ -125,9 +125,6 @@ public class DemoActivity extends AppCompatActivity {
     // while interacting with the UI.
     findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
 
-    // Create an Observable that emits 1 to 5
-    Observable.just(1, 2, 3, 4, 5);
-
     // Sometimes we want to refine specific event only to be emitted by observable
     // Solution in here: Using another operator called filter()
     Observable<Integer> observable = Observable
@@ -167,19 +164,7 @@ public class DemoActivity extends AppCompatActivity {
 
       @Override
       public void onNext(Integer integer) {
-        System.out.println("New data received: " + integer);
-      }
-    };
-
-    /**
-     * In many cases you don’t care about onCompleted() or onError(). So instead of using Observer<T>
-     * we can use a simpler class to define what to do during onNext() using Action1 class.
-     */
-
-    Action1<Integer> onNextAction = new Action1<Integer>() {
-      @Override
-      public void call(Integer s) { // This is equivalent to onNext()
-        System.out.println(s);
+        Log.i("TAG", "New data received: " + integer);
       }
     };
 
