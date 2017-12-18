@@ -42,6 +42,8 @@ public class DemoActivity extends AppCompatActivity {
    */
   private static final int AUTO_HIDE_DELAY_MILLIS = 3000;
 
+  private Subscription mSubscription;
+
   /**
    * Some older devices needs a small delay between UI widget updates
    * and a change of the status and navigation bar.
@@ -184,7 +186,7 @@ public class DemoActivity extends AppCompatActivity {
     /**
      * Here, onCall() is equivalent to onNext() in our first approach.
      */
-    Subscription subscription = observable
+    mSubscription = observable
         .subscribeOn(Schedulers.io())               // Observable will run on IO thread.
         .observeOn(AndroidSchedulers.mainThread())  // Observer will run on main thread.
         .subscribe(observer);                       // subscribe the observer
@@ -248,5 +250,13 @@ public class DemoActivity extends AppCompatActivity {
   private void delayedHide(int delayMillis) {
     mHideHandler.removeCallbacks(mHideRunnable);
     mHideHandler.postDelayed(mHideRunnable, delayMillis);
+  }
+
+  @Override
+  protected void onDestroy() {
+    super.onDestroy();
+
+    // Unsubscribe both subscriptions.
+    mSubscription.unsubscribe();
   }
 }
