@@ -41,10 +41,28 @@
     The evaluation matrix
 <img src = "https://github.com/danisluis6/RxJava-Introduction/blob/master/The%20evaluation%20matrix.png" alt = "The evaluation matrix">
 
-## How to make editText without line at bottom
+## Concepts
    > Reactive programming is a programming paradigm oriented around data flows and the propagation of change. This means that it should be possible to express static or dynamic data flows with ease in the programming languages used, and that the underlying execution model will automatically propagate changes through the data flow.
    
    > RX = OBSERVABLE + OBSERVER + SCHEDULERS
+
+## 3 simple steps to use Rx in your application
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/master/The%20evaluation%20matrix.png" alt = "The evaluation matrix">
+
+## An Example
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/master/The%20evaluation%20matrix.png" alt = "The evaluation matrix">
+
+   > Step-1 Create observable that emits the data:
+   
+   >> Here database is an observable which emits the data. In our case, it emits the strings. just() is an operator. Which basically emits the data provided in the argument one by one. (We are going to look into the operators in detail in our upcoming articles. So, don’t worry about them.)
+   
+   > Step -2 Create observer that consumes data:
+   
+   >> In above code snippet observer is an observer that consumes the data emitted by the database observable. It processes the data received and also handles error inside it.
+   
+   > Step-3 Manage concurrency:
+   
+   >> At the last step, we define our schedulers that manage the concurrency. subscribeOn(Schedulers.newThread()) tells database observable to run on background thread. observeOn(AndroidSchedulers.mainThread()) tells observer to run on the main thread. This is basic code for reactive programming.
 
 ## Schedule
 
