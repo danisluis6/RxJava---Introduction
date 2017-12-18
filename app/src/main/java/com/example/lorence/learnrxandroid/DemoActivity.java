@@ -8,9 +8,17 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 
-/**
+/*
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
+ */
+
+/**
+ * @Run: https://github.com/ReactiveX/RxAndroid#binaries
+ * Find the lastest version from here
+ *
+ * @Run:
+ *
  */
 @SuppressWarnings("ALL")
 public class DemoActivity extends AppCompatActivity {
