@@ -601,7 +601,7 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="80c30f5c9877ae92c0798ea833683d0aa7858f56">
+        sha1="b0beb96788aa9e536440d75dec2b44088139965e">
         <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_238c166930a8ea18efdc4849f0988f0feb9102a4/classes.dex" />
     </item>
     <item
