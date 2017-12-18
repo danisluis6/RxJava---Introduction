@@ -9,7 +9,6 @@ import java.util.List;
  * Created by lorence on 13/11/2017.
  */
 
-// TODO
 public interface IHomePresenter extends IBasePresenter<IHomeView> {
 
     List<Ticket> getListOfTickers();

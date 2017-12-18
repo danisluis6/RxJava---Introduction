@@ -29,6 +29,8 @@ public class HomeView extends BaseView implements IHomeView {
     private Observable<String> mObservable;
     private Observer<String> mObserver;
 
+    private HomePresenter mHomePresenter;
+
     /**
      * Some older devices needs a small delay between UI widget updates
      * and a change of the status and navigation bar.
@@ -42,6 +44,8 @@ public class HomeView extends BaseView implements IHomeView {
 
     @Override
     public void activityCreated() {
+        mHomePresenter = new HomePresenter(mContext);
+        mHomePresenter.attachView(this);
 
     }
 

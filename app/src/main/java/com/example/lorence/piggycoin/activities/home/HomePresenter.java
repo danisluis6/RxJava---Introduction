@@ -11,7 +11,6 @@ import java.util.List;
  * Created by lorence on 13/11/2017.
  */
 
-// TODO
 public class HomePresenter implements IHomePresenter {
 
     private IHomeView mHomeView;
@@ -19,8 +18,8 @@ public class HomePresenter implements IHomePresenter {
     private final IHomeModel mHomeModel;
 
     HomePresenter(Context context) {
-        this.mHomeModel = new HomeModel(context);
-        this.mHomeModel.attachView(this);
+        mHomeModel = new HomeModel(context);
+        mHomeModel.attachView(this);
     }
 
     @Override
