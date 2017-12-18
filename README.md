@@ -43,7 +43,8 @@
 
 ## How to make editText without line at bottom
    > Reactive programming is a programming paradigm oriented around data flows and the propagation of change. This means that it should be possible to express static or dynamic data flows with ease in the programming languages used, and that the underlying execution model will automatically propagate changes through the data flow.
-   > 
+   
+   > RX = OBSERVABLE + OBSERVER + SCHEDULERS
 
 ## Schedule
 
