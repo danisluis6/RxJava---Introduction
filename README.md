@@ -10,8 +10,8 @@
 
 > **Schedule** #[Schedule](#schedule)
 
-# [Recycler View](#recycler-view)
-## [Load More](#load-more)
+# [JavaRx](#javarx)
+## [Introduction](#introduction)
 ### [Index Page](#index-page)
   - [Widget Android](#widget-android)
   - [EditText](#edittext)
@@ -28,12 +28,12 @@
 ### [Total Page](#total-page)
 ### [Check Load More](#check-load-more)
 
-## Recycler View
-## Check Load More
-   > Update list in Adapter. We should upgrade value of isLoadMore = false at onSuccess();
-
+# JavaRx
+## Introduction
+   > Functional reactive programming is very hard to understand when you come from Object Oriented Programming
+   
     <color name="White">#FFFFFF</color>
- 
+    
 ## How to make editText without line at bottom
 
 ## Schedule
