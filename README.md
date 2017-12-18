@@ -36,7 +36,7 @@
    > Question 2: Find a reason why we need to use RxJava. Maybe, we already have some prolems for issues occurs.
    
     The evaluation matrix
-<img src = "" alt = "The evaluation matrix">
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/master/The%20evaluation%20matrix.png" alt = "The evaluation matrix">
 
 ## How to make editText without line at bottom
 
