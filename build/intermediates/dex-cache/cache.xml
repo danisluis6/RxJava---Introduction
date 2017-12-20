@@ -3,21 +3,30 @@
 
     <item
         is-multidex="true"
-        jar="/home/lorence/.android/build-cache/1fb00ef636e1b92d0535105349cf1ed0101b9d2c/output/jars/classes.jar"
+        jar="/home/lorence/.android/build-cache/882a5118f2aaeb90b4a0f45761d364b75b4000ca/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="8aa1017a9d855f7071d9f47ae563f1dc45730b74">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7dd9e8a48300be77f9f13bb01f21691f6470062f/classes.dex" />
+        sha1="1a94a06ec585c9423a3c03bde1f7bf9268f83d66">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d1ed208fbf90de02e5d853dc62a24a1611bb81c9/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/lorence/.android/build-cache/4fed18983f9175418ba0cbeed7a381164bd82523/output/jars/classes.jar"
+        jar="/home/lorence/.android/build-cache/e57051ae704afea85ec7c26b0bb341e1960a788a/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_718b4d5118d412383719c0f36b129e40d5efadb1/classes.dex" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dae0e10e55be7482c4e24bc1235ea4906f5f6c70/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.0.0/db09a97f4f0db8892c1a0111a4b966f97920d082/support-annotations-26.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="db09a97f4f0db8892c1a0111a4b966f97920d082">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.0.0_def89944029bdee10cc4100c7b3f6a366680ce06/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -30,21 +39,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0-alpha1/dddb0f589fc65ed3a262d1a90f4d61af6891776a/common-1.0.0-alpha1.jar"
+        jar="/home/lorence/.android/build-cache/e9d34beb1991ce9ea3a49037cef9e3e0bca3c66f/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="dddb0f589fc65ed3a262d1a90f4d61af6891776a">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0-alpha1_15590c8162ebd08f1411cb2b4c31481779c16b12/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_4c853296ce27f87b4f32f27d9a3c2bc48e274cb0/classes.dex" />
+        sha1="dd2e7a567260ca4e40c09ba330f4f2d318660554">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_411636c31519b1b5ff6a297e00a04ecf0be20ec3/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -54,6 +54,15 @@
         revision="26.0.2"
         sha1="f7b86f1beb2b3625c6a1a5da6b5fc5294b64aea9">
         <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a43cee5de7dade6df8a91e4c67db0e65b20be82f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.8.1/bc373fb6bc7bca3035041b924f158fd2b946ee8d/butterknife-annotations-8.8.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="bc373fb6bc7bca3035041b924f158fd2b946ee8d">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.8.1_65e5c843d11068da9dcadbbf32948c10077becdf/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -75,21 +84,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/lorence/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jar="/home/lorence/.android/build-cache/2e31ae584cad8544070d4401a6e05b8a4ba0aa8b/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_53e1827bbc8911a309fa9ebab20510544ae0f493/classes.dex" />
+        sha1="8602ab07133e6ee182726fa27588420dba9d6d55">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_690ddafa70e9f7acb2cf7a6993122c014f609258/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/lorence/.android/build-cache/a4719027ded5c7662076ab8a4d9d0665fa5ea3e3/output/jars/classes.jar"
+        jar="/home/lorence/.android/build-cache/9c9baf5494a523c185939ad3414ea737a8ce27a7/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2d15c86ae489f619742d436f0577b205723e2920/classes.dex" />
+        sha1="d30ac0c26495d7264529e333cec806eec64dd6f3">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_effb11364934f58df3141b6079bc1f45f3da796e/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -111,218 +120,11 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/lorence/.android/build-cache/9902252ce6cfe1020d674c4e664143a8f36935a0/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="3ca559b8c5ff0711072d50d52581001494420e0d">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8a686a219bb44eedb2535739378d9f41e22965ce/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.android/build-cache/7ddc23863d666d1fd68a9c8143bb4c153820af20/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="6a2bcb61342d09fe9acf55c9daf63961c8866cc0">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4a145f835ec03216b759ac2c4d8c4c76b5183667/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.android/build-cache/882a5118f2aaeb90b4a0f45761d364b75b4000ca/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="1a94a06ec585c9423a3c03bde1f7bf9268f83d66">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d1ed208fbf90de02e5d853dc62a24a1611bb81c9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.android/build-cache/e57051ae704afea85ec7c26b0bb341e1960a788a/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dae0e10e55be7482c4e24bc1235ea4906f5f6c70/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.4.1_9fa4764bbd6e04ac7172c5b5986a095dacbdf19f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.0.0/db09a97f4f0db8892c1a0111a4b966f97920d082/support-annotations-26.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="db09a97f4f0db8892c1a0111a4b966f97920d082">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.0.0_def89944029bdee10cc4100c7b3f6a366680ce06/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.android/build-cache/9c65719e33d50bd1053e77370715ff8cb94f0b19/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="f80ef3e88d53cd67f09ae860e9e95967108f5cb2">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_67c1d9148e2f089282d3eface1c65faa5008b94f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.6/2586312cd2b8a511e4c6236736f5a039fc0f2273/rxjava-1.1.6.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="2586312cd2b8a511e4c6236736f5a039fc0f2273">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/rxjava-1.1.6_5e95825eb067f787bc8a41510c6b01910aaeec92/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.android/build-cache/5e96d1edf5ba4f5aea08936ca948ab9a98ba68e3/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="6fdbd1bd6503815f2cef20a9a137005e5953aad1">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_64b71d3c114b4b5a50f80456f210308585775974/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.android/build-cache/e9d34beb1991ce9ea3a49037cef9e3e0bca3c66f/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="dd2e7a567260ca4e40c09ba330f4f2d318660554">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_411636c31519b1b5ff6a297e00a04ecf0be20ec3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.8.1/bc373fb6bc7bca3035041b924f158fd2b946ee8d/butterknife-annotations-8.8.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="bc373fb6bc7bca3035041b924f158fd2b946ee8d">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.8.1_65e5c843d11068da9dcadbbf32948c10077becdf/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-scalars/2.1.0/7c0d7c8f6e52115bb82fa018d81a8d0cae35dde5/converter-scalars-2.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="7c0d7c8f6e52115bb82fa018d81a8d0cae35dde5">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-scalars-2.1.0_1632f64b9ce148c11b06afca232ede9f69c0e45d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.android/build-cache/20ebcd5986899ff23d7acfc74933791f9fcd62b1/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="ba181b635dc40ba213e382e67397df779f7665b7">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_698b351f0df3336d4c4ae1e4e34aaa096ccf186c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_70f1850ea41273fef1c069f2e9a03f8f6ded7a23/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.android/build-cache/e798f5b6c86796e9a4e722bf6e3d0e82c2dc896c/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="bd57e6d90e63921172b30ca28af527267e6d213d">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4ccce5bed81deb655c483402f470cb03595635a1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.4.1/381fc1096ba65040d8e80ea43b2e1d9bad02345e/logging-interceptor-3.4.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="381fc1096ba65040d8e80ea43b2e1d9bad02345e">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-3.4.1_b32543dfcbba7de973acff66fa6a33387d1857bc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_7a5e03de0baf52ba715d977c6f6974bcbf20a59e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.android/build-cache/2e31ae584cad8544070d4401a6e05b8a4ba0aa8b/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="8602ab07133e6ee182726fa27588420dba9d6d55">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_690ddafa70e9f7acb2cf7a6993122c014f609258/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.android/build-cache/9c9baf5494a523c185939ad3414ea737a8ce27a7/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="d30ac0c26495d7264529e333cec806eec64dd6f3">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_effb11364934f58df3141b6079bc1f45f3da796e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.android/build-cache/bf4551f52e4b052259f88b00f2696a0d7c0780cd/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="13b31fe5f2e97c9fa36b4716cf32c59afb5603b4">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_816720c9f4275068244ced00d17715e5fdc69487/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.9.0_f7747bd48982317e0b3bec40d3cd4bcf0e048657/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.1.0_a8284f5d7e1da88bcf2c7737b406e884066c81c5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/android.arch.persistence.room/common/1.0.0-alpha1/4fb1be8519a8e9d931945beaee734dd7c1691462/common-1.0.0-alpha1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="4fb1be8519a8e9d931945beaee734dd7c1691462">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/common-1.0.0-alpha1_3a481d329926507211bcdd6f599d8d88afd0e537/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="fd61c9c61b5221638db4ecb1cd87b4ce74462726">
+        sha1="2149d224136cf8e8677bebcec7e9bbe1af333506">
         <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_238c166930a8ea18efdc4849f0988f0feb9102a4/classes.dex" />
     </item>
     <item
@@ -333,6 +135,15 @@
         revision="26.0.2"
         sha1="b102f892442929c3457de1ef6a94f5dda3dd8864">
         <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_06cac61080b214d3455286c80d256fc6bb389a0c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lorence/.android/build-cache/7ddc23863d666d1fd68a9c8143bb4c153820af20/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6a2bcb61342d09fe9acf55c9daf63961c8866cc0">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4a145f835ec03216b759ac2c4d8c4c76b5183667/classes.dex" />
     </item>
     <item
         is-multidex="true"
