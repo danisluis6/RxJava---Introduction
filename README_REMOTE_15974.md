@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # WELCOME YOU TUTORIAL LEARNING RXJAVA [![Build Status](https://travis-ci.org/nomensa/jquery.hide-show.svg)](https://travis-ci.org/nomensa/jquery.hide-show.svg?branch=master)
 
 > **Nickname:** Lorence
@@ -81,4 +79,3 @@
 > **Update list when change release year**
 
 
->>>>>>> fdc3b439892c75ec8c582f3f6d95d9f1b365e88d

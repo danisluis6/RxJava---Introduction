@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # WELCOME YOU TUTORIAL LEARNING RXJAVA [![Build Status](https://travis-ci.org/nomensa/jquery.hide-show.svg)](https://travis-ci.org/nomensa/jquery.hide-show.svg?branch=master)
 
 > **Nickname:** Lorence
@@ -49,10 +47,10 @@
    > RX = OBSERVABLE + OBSERVER + SCHEDULERS
 
 ## 3 simple steps to use Rx in your application
-<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/master/Implement%20Rx%20in%20your%20application.png" alt = "The evaluation matrix">
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/master/The%20evaluation%20matrix.png" alt = "The evaluation matrix">
 
 ## An Example
-<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/master/Enexample.png" alt = "The evaluation matrix">
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/master/The%20evaluation%20matrix.png" alt = "The evaluation matrix">
 
    > Step-1 Create observable that emits the data:
    
@@ -81,4 +79,3 @@
 > **Update list when change release year**
 
 
->>>>>>> fdc3b439892c75ec8c582f3f6d95d9f1b365e88d
