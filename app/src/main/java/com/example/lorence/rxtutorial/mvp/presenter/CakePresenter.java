@@ -3,6 +3,8 @@ package com.example.lorence.rxtutorial.mvp.presenter;
 import com.example.lorence.rxtutorial.base.BasePresenter;
 import com.example.lorence.rxtutorial.mvp.view.MainView;
 
+import javax.inject.Inject;
+
 /**
  * Created by lorence on 25/12/2017.
  * @version version7
@@ -37,5 +39,16 @@ import com.example.lorence.rxtutorial.mvp.view.MainView;
  * Back to this case
  */
 
-public class CakePresenter extends BasePresenter<MainView>{
+public class CakePresenter extends BasePresenter<MainView> {
+
+    @Inject
+    public CakePresenter() {
+
+    }
+
+    private Object cakes;
+
+    public Object getCakes() {
+        return cakes;
+    }
 }

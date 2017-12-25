@@ -28,5 +28,12 @@ public class MainActivity extends BaseActivity implements MainView {
     @Override
     protected void onViewReady(Bundle savedInstanceState, Intent intent) {
         super.onViewReady(savedInstanceState, intent);
+        mPresenter.getCakes();
+    }
+
+    @Override
+    protected void resolveDaggerDependency() {
+        super.resolveDaggerDependency();
+
     }
 }
