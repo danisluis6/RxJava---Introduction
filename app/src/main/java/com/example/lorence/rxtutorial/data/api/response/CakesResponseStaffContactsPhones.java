@@ -1,4 +1,4 @@
-package com.example.lorence.rxtutorial.mvp.module;
+package com.example.lorence.rxtutorial.data.api.response;
 
 /**
  * Created by lorence on 25/12/2017.

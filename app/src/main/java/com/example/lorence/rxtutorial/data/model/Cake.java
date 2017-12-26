@@ -1,5 +1,5 @@
 
-package com.example.lorence.rxtutorial.mvp.module;
+package com.example.lorence.rxtutorial.data.model;
 
 import java.io.Serializable;
 

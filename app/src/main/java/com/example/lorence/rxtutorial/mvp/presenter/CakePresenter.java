@@ -1,9 +1,18 @@
 package com.example.lorence.rxtutorial.mvp.presenter;
 
 import com.example.lorence.rxtutorial.base.BasePresenter;
+import com.example.lorence.rxtutorial.data.api.CakeApiService;
+import com.example.lorence.rxtutorial.mapper.CakeMapper;
+import com.example.lorence.rxtutorial.data.model.Cake;
+import com.example.lorence.rxtutorial.data.api.response.CakesResponse;
 import com.example.lorence.rxtutorial.mvp.view.MainView;
 
+import java.util.List;
+
 import javax.inject.Inject;
+
+import rx.Observable;
+import rx.Observer;
 
 /**
  * Created by lorence on 25/12/2017.
@@ -61,12 +70,39 @@ import javax.inject.Inject;
  * Back to this case
  */
 
-public class CakePresenter extends BasePresenter<MainView> {
+public class CakePresenter extends BasePresenter<MainView> implements Observer<CakesResponse> {
+
+    /**
+     * Involve with IraMovies. We will have the same structure with Dagger2
+     * => We will have template_2
+     * MVP
+     * => CakeModule -/- CakeMapper
+     */
+    @Inject protected CakeApiService mApiService;
+    @Inject protected CakeMapper mCakeMapper;
 
     @Inject
     public CakePresenter() {
     }
 
     public void getCakes() {
+        Observable<CakesResponse> cakesResponseObservable = mApiService.getCakes();
+        subscribe(cakesResponseObservable, this);
+    }
+
+    @Override
+    public void onCompleted() {
+
+    }
+
+    @Override
+    public void onError(Throwable e) {
+
+    }
+
+    @Override
+    public void onNext(CakesResponse cakesResponse) {
+        List<Cake> cakes = mCakeMapper.mapCakes(cakesResponse);
+        getView().onCakeLoaded(cakes);
     }
 }
