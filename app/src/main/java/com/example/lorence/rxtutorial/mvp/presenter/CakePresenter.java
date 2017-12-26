@@ -1,5 +1,6 @@
 package com.example.lorence.rxtutorial.mvp.presenter;
 
+import com.example.lorence.rxtutorial.api.CakeApiService;
 import com.example.lorence.rxtutorial.base.BasePresenter;
 import com.example.lorence.rxtutorial.mvp.view.MainView;
 
@@ -62,6 +63,8 @@ import javax.inject.Inject;
  */
 
 public class CakePresenter extends BasePresenter<MainView> {
+
+    @Inject protected CakeApiService mApiService;
 
     @Inject
     public CakePresenter() {
