@@ -2,10 +2,12 @@ package com.example.lorence.rxtutorial.modules.home;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.example.lorence.rxtutorial.R;
 import com.example.lorence.rxtutorial.base.BaseActivity;
 import com.example.lorence.rxtutorial.di.components.DaggerCakeComponent;
+import com.example.lorence.rxtutorial.di.module.CakeModule;
 import com.example.lorence.rxtutorial.mvp.presenter.CakePresenter;
 import com.example.lorence.rxtutorial.mvp.view.MainView;
 
@@ -30,10 +32,28 @@ public class MainActivity extends BaseActivity implements MainView {
     protected void onViewReady(Bundle savedInstanceState, Intent intent) {
         super.onViewReady(savedInstanceState, intent);
         mPresenter.getCakes();
+        Log.i("TAG", "MainActivity -> onViewReady");
     }
 
+
+    /**
+     * We have CakeComponent => CakeComponent
+     *
+     * Example 1:
+     *      CakeComponent DaggerCakeComponent.builder()
+     *              .applicationComponent(getApplicationContext())
+     *              .cakeModule(new CakeModule(this))
+     *              .build();
+     *
+     * Example 2:
+     *      applicationComponent(). We will get from Application(). So implement newthod
+     *  to BaseActivity()
+     */
     @Override
     protected void resolveDaggerDependency() {
-        DaggerCakeComponent.builder.create();
+        DaggerCakeComponent.builder()
+                .applicationComponent(getApplicationComponent())
+                .cakeModule(new CakeModule(this))
+                .build().inject(this);
     }
 }

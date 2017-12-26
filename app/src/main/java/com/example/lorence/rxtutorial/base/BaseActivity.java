@@ -7,11 +7,15 @@ import android.support.annotation.CallSuper;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.example.lorence.rxtutorial.application.CakeApplication;
+import com.example.lorence.rxtutorial.di.components.ApplicationComponent;
+
 /**
  * Created by lorence on 25/12/2017.
  * @version version7
  * @since 12/25/2017
  */
+
 
 public abstract class BaseActivity extends AppCompatActivity {
 
@@ -49,6 +53,10 @@ public abstract class BaseActivity extends AppCompatActivity {
         if (mProgressDialog != null && mProgressDialog.isShowing()) {
             mProgressDialog.dismiss();
         }
+    }
+
+    protected ApplicationComponent getApplicationComponent() {
+        return ((CakeApplication) getApplication()).getApplicationComponent();
     }
 
     protected abstract int getContentView();
