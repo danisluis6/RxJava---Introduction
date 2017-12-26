@@ -1,6 +1,6 @@
-package com.example.lorence.rxtutorial.api;
+package com.example.lorence.rxtutorial.data.api;
 
-import com.example.lorence.rxtutorial.mvp.module.CakesResponse;
+import com.example.lorence.rxtutorial.data.api.response.CakesResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

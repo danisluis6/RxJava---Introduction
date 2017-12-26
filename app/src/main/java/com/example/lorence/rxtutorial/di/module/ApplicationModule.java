@@ -36,9 +36,9 @@ public class ApplicationModule {
     private Context mContext;
 
     public ApplicationModule(Context context, String baseUrl) {
+        Log.i("TAG", "ApplicationModule -> ApplicationModule");
         mContext = context;
         mBaseUrl = baseUrl;
-        Log.i("TAG", "ApplicationModule -> ApplicationModule");
     }
 
 
@@ -61,7 +61,7 @@ public class ApplicationModule {
     @Singleton
     @Provides
     GsonConverterFactory provideGsonConverterFactory() {
-        Log.i("TAG", "provideGsonConverterFactory");
+        Log.i("TAG", "ApplicationModule -> provideGsonConverterFactory");
         return GsonConverterFactory.create();
     }
 
@@ -78,7 +78,7 @@ public class ApplicationModule {
     @Provides
     @Named("ok-1")
     OkHttpClient provideOkHttpClient1() {
-        Log.i("TAG", "provideOkHttpClient1");
+        Log.i("TAG", "ApplicationModule -> provideOkHttpClient1");
         return new OkHttpClient.Builder()
                 .connectTimeout(20, TimeUnit.SECONDS)
                 .readTimeout(20, TimeUnit.SECONDS)
@@ -98,7 +98,7 @@ public class ApplicationModule {
     @Provides
     @Named("ok-2")
     OkHttpClient provideOkHttpClient2() {
-        Log.i("TAG", "provideOkHttpClient2");
+        Log.i("TAG", "ApplicationModule -> provideOkHttpClient2");
         return new OkHttpClient.Builder()
                 .connectTimeout(20, TimeUnit.SECONDS)
                 .readTimeout(20, TimeUnit.SECONDS)
@@ -117,7 +117,7 @@ public class ApplicationModule {
     @Singleton
     @Provides
     RxJavaCallAdapterFactory provideRxJavaCallAdapterFactory() {
-        Log.i("TAG", "provideRxJavaCallAdapterFactory");
+        Log.i("TAG", "ApplicationModule -> provideRxJavaCallAdapterFactory");
         return RxJavaCallAdapterFactory.create();
     }
 
@@ -133,7 +133,7 @@ public class ApplicationModule {
     @Singleton
     @Provides
     Retrofit provideRetrofit(@Named("ok-1") OkHttpClient client, GsonConverterFactory converterFactory, RxJavaCallAdapterFactory adapterFactory) {
-        Log.i("TAG", "provideRetrofit");
+        Log.i("TAG", "ApplicationModule -> provideRetrofit");
         return new Retrofit.Builder()
                 .baseUrl(mBaseUrl)
                 .addConverterFactory(converterFactory)
@@ -159,7 +159,7 @@ public class ApplicationModule {
     @Provides
     @Singleton
     Context provideContext() {
-        Log.i("TAG", "provideContext");
+        Log.i("TAG", "ApplicationModule -> provideContext");
         return mContext;
     }
 
