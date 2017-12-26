@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.example.lorence.rxtutorial.R;
 import com.example.lorence.rxtutorial.base.BaseActivity;
+import com.example.lorence.rxtutorial.di.components.DaggerCakeComponent;
 import com.example.lorence.rxtutorial.mvp.presenter.CakePresenter;
 import com.example.lorence.rxtutorial.mvp.view.MainView;
 
@@ -33,7 +34,6 @@ public class MainActivity extends BaseActivity implements MainView {
 
     @Override
     protected void resolveDaggerDependency() {
-        super.resolveDaggerDependency();
-
+        DaggerCakeComponent.builder.create();
     }
 }

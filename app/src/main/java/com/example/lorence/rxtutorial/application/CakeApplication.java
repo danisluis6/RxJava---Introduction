@@ -2,6 +2,10 @@ package com.example.lorence.rxtutorial.application;
 
 import android.app.Application;
 
+import com.example.lorence.rxtutorial.di.components.ApplicationComponent;
+import com.example.lorence.rxtutorial.di.components.DaggerApplicationComponent;
+import com.example.lorence.rxtutorial.di.module.ApplicationModule;
+
 /**
  * Created by lorence on 25/12/2017.
  * @version version7
@@ -16,14 +20,28 @@ import android.app.Application;
 
 public class CakeApplication extends Application {
 
+    private ApplicationComponent mApplicationComponent;
+
     @Override
     public void onCreate() {
         super.onCreate();
         initializeApplicationComponent();
     }
 
-    private void initializeApplicationComponent() {
-        DaggerApplicationComponent.builder().create();
+    /**
+     * Using: ApplicationModule => we have two params as Context, URL
+     * - Context: We get from BaseActivity
+     * - URL: We get from BaseActivity
+     * => We already have these params above
+     */
+    protected void initializeApplicationComponent() {
+        mApplicationComponent = DaggerApplicationComponent.builder()
+                .applicationModule(new ApplicationModule(this, "https://gist.githubusercontent.com"))
+                .build();
+    }
+
+    public ApplicationComponent getApplicationComponent() {
+        return mApplicationComponent;
     }
 
     @Override

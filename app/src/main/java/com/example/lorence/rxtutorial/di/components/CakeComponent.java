@@ -2,6 +2,7 @@ package com.example.lorence.rxtutorial.di.components;
 
 import com.example.lorence.rxtutorial.di.module.CakeModule;
 import com.example.lorence.rxtutorial.di.scope.PerActivity;
+import com.example.lorence.rxtutorial.modules.home.MainActivity;
 
 import dagger.Component;
 
@@ -14,5 +15,7 @@ import dagger.Component;
 @PerActivity
 @Component(modules = CakeModule.class, dependencies = ApplicationComponent.class)
 public interface CakeComponent {
+
+    void inject(MainActivity activity);
 
 }

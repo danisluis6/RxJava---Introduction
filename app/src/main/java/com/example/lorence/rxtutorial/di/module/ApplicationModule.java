@@ -34,7 +34,7 @@ public class ApplicationModule {
     private String mBaseUrl;
     private Context mContext;
 
-    private ApplicationModule(Context context, String baseUrl) {
+    public ApplicationModule(Context context, String baseUrl) {
         mContext = context;
         mBaseUrl = baseUrl;
     }

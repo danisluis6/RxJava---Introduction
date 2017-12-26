@@ -7,8 +7,30 @@ import javax.inject.Inject;
 
 /**
  * Created by lorence on 25/12/2017.
+ *
  * @version version7
  * @since 12/25/2017
+ * <p>
+ * With MVP: this of case and not the same with this.
+ * Let see it
+ * <p>
+ * Analyze 1:
+ * MoviePresenter => attachView(IMoviesView)
+ * MovieModel     => attachView(IMoviePresenter)
+ * <p>
+ * Analyze 2:
+ * Using interface to inject method to this class
+ * MoviePresenter => IMoviePresenter
+ * MovieModel     => IMovieModel
+ * <p>
+ * Analyze 3:
+ * extends from Interface
+ * IMoviePresenter extends LorenceInterface
+ * IMovieModel extends LorenceInterface
+ * <p>
+ * => Create method attachView(? view) => ? is V(one of type param)
+ * => We need pass argument for this method.
+ * At position method new method() <V> => Done now
  */
 
 /**
@@ -43,12 +65,8 @@ public class CakePresenter extends BasePresenter<MainView> {
 
     @Inject
     public CakePresenter() {
-
     }
 
-    private Object cakes;
-
-    public Object getCakes() {
-        return cakes;
+    public void getCakes() {
     }
 }
