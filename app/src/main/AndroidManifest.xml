@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/FullscreenTheme">
-        <activity android:name=".modules.home.MainActivity">
+        <activity android:name=".module.home.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

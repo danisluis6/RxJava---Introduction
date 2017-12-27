@@ -2,7 +2,7 @@ package com.example.lorence.rxtutorial.di.components;
 
 import com.example.lorence.rxtutorial.di.module.CakeModule;
 import com.example.lorence.rxtutorial.di.scope.PerActivity;
-import com.example.lorence.rxtutorial.modules.home.MainActivity;
+import com.example.lorence.rxtutorial.module.home.MainActivity;
 
 import dagger.Component;
 

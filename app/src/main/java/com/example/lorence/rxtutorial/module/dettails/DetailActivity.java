@@ -1,4 +1,4 @@
-package com.example.lorence.rxtutorial.modules.dettails;
+package com.example.lorence.rxtutorial.module.dettails;
 
 import android.content.Intent;
 import android.os.Bundle;

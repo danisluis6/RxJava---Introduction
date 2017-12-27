@@ -1,4 +1,4 @@
-package com.example.lorence.rxtutorial.modules.home;
+package com.example.lorence.rxtutorial.module.home;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,6 +21,8 @@ import javax.inject.Inject;
  *
  * @version version7
  * @since 12/25/2017
+ *
+ * @link(https://www.youtube.com/watch?v=cW4GfV8emIE)
  */
 
 public class MainActivity extends BaseActivity implements MainView {

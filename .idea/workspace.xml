@@ -11,13 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d366868c-fcc0-48ed-baae-e9988230bd75" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/modules/dettails/DetailActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/dettails/DetailActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/modules/home/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/home/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/di/components/CakeComponent.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/di/components/CakeComponent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="RxJava-Introduction.iws" />
@@ -50,38 +54,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/modules/home/MainActivity.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/home/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="24" column="52" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="255">
-                <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
             </state>
           </provider>
         </entry>
@@ -2001,11 +1981,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/mvp/view/MainView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/mvp/view/BaseView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/di/module/ApplicationModule.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/modules/home/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/data/api/response/CakesResponseStaffContactsPhones.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/data/model/Cake.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/mvp/presenter/CakePresenter.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/modules/home/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/home/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -2082,6 +2063,28 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="rxtutorial" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RxJava-Introduction" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rxtutorial" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2207,7 +2210,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="READ&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/README.md&#10;CakeM&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/di/module/CakeModule.java&#10;AppModule&#9;PSI&#9;JAVA://com.example.lorence.rxtutorial.di.module.ApplicationModule&#10;CakeMo&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/di/module/CakeModule.java&#10;MainA&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/modules/home/MainActivity.java&#10;Cake&#9;PSI&#9;JAVA://com.example.lorence.rxtutorial.mvp.module.Cake&#10;CakePre&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/mvp/presenter/CakePresenter.java&#10;CakeApp&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/application/CakeApplication.java&#10;AndroidManife&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/AndroidManifest.xml&#10;styles&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/res/values/styles.xml&#10;CakeAp&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/application/CakeApplication.java&#10;BaseA&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/base/BaseActivity.java&#10;CakeCom&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/di/components/CakeComponent.java&#10;CakeA&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/application/CakeApplication.java&#10;BaseAc&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/base/BaseActivity.java" />
+    <property name="SearchEverywhereHistoryKey" value="MainA&#9;PSI&#9;JAVA://com.example.lorence.rxtutorial.modules.home.MainActivity&#10;READ&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/README.md&#10;CakeM&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/di/module/CakeModule.java&#10;AppModule&#9;PSI&#9;JAVA://com.example.lorence.rxtutorial.di.module.ApplicationModule&#10;CakeMo&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/di/module/CakeModule.java&#10;Cake&#9;PSI&#9;JAVA://com.example.lorence.rxtutorial.mvp.module.Cake&#10;CakePre&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/mvp/presenter/CakePresenter.java&#10;CakeApp&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/application/CakeApplication.java&#10;AndroidManife&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/AndroidManifest.xml&#10;styles&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/res/values/styles.xml&#10;CakeAp&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/application/CakeApplication.java&#10;BaseA&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/base/BaseActivity.java&#10;CakeCom&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/di/components/CakeComponent.java&#10;CakeA&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/application/CakeApplication.java&#10;BaseAc&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/base/BaseActivity.java" />
     <property name="device.picker.selection" value="RQ3002E9SP" />
   </component>
   <component name="RecentsManager">
@@ -2262,7 +2265,7 @@
         <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="com.example.lorence.rxtutorial.modules.home.MainActivity" />
+      <option name="ACTIVITY_CLASS" value="com.example.lorence.rxtutorial.module.home.MainActivity" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -2563,6 +2566,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18960752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2577,7 +2581,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2655,7 +2658,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/modules/dettails/DetailActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/dettails/DetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
@@ -2724,6 +2727,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#548#566#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2861,16 +2867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/modules/home/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -2895,6 +2891,16 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/home/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
