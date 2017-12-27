@@ -1,5 +1,7 @@
 package com.example.lorence.rxtutorial.mvp.presenter;
 
+import android.util.Log;
+
 import com.example.lorence.rxtutorial.base.BasePresenter;
 import com.example.lorence.rxtutorial.data.api.CakeApiService;
 import com.example.lorence.rxtutorial.mapper.CakeMapper;
@@ -78,26 +80,30 @@ public class CakePresenter extends BasePresenter<MainView> implements Observer<C
      * MVP
      * => CakeModule -/- CakeMapper
      */
-    @Inject protected CakeApiService mApiService;
-    @Inject protected CakeMapper mCakeMapper;
+     @Inject protected CakeApiService mApiService;
+     @Inject protected CakeMapper mCakeMapper;
 
     @Inject
     public CakePresenter() {
+        Log.i("TAG", "CakePresenter -> CakePresenter(Constructor)");
     }
 
     public void getCakes() {
+        getView().onShowDialog("Loading cakes...");
         Observable<CakesResponse> cakesResponseObservable = mApiService.getCakes();
         subscribe(cakesResponseObservable, this);
     }
 
     @Override
     public void onCompleted() {
-
+        getView().onHideDialog();
+        getView().onShowToast("Cakes loading complete!");
     }
 
     @Override
     public void onError(Throwable e) {
-
+        getView().onHideDialog();
+        getView().onShowToast("Error loading cakes " + e.getMessage());
     }
 
     @Override

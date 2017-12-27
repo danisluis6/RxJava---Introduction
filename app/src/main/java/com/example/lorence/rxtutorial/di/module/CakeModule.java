@@ -1,5 +1,7 @@
 package com.example.lorence.rxtutorial.di.module;
 
+import android.util.Log;
+
 import com.example.lorence.rxtutorial.di.scope.PerActivity;
 import com.example.lorence.rxtutorial.data.api.CakeApiService;
 import com.example.lorence.rxtutorial.mvp.view.MainView;
@@ -22,17 +24,20 @@ public class CakeModule {
 
     public CakeModule(MainView view) {
         mView = view;
+        Log.i("TAG", "CakeModule -> CakeModule(Constructor)");
     }
 
     @PerActivity
     @Provides
     CakeApiService provideApiService(Retrofit retrofit) {
+        Log.i("TAG", "CakeModule -> CakeApiService");
         return retrofit.create(CakeApiService.class);
     }
 
     @PerActivity
     @Provides
     MainView provideView() {
+        Log.i("TAG", "CakeModule -> MainView");
         return mView;
     }
 

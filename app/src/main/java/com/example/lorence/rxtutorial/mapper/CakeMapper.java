@@ -1,5 +1,7 @@
 package com.example.lorence.rxtutorial.mapper;
 
+import android.util.Log;
+
 import com.example.lorence.rxtutorial.data.model.Cake;
 import com.example.lorence.rxtutorial.data.api.response.CakesResponse;
 import com.example.lorence.rxtutorial.data.api.response.CakesResponseCakes;
@@ -20,6 +22,7 @@ public class CakeMapper {
 
     @Inject
     public CakeMapper() {
+        Log.i("TAG", "CakeMapper -> CakeMapper(Constructor)");
     }
 
     public List<Cake> mapCakes(CakesResponse response) {

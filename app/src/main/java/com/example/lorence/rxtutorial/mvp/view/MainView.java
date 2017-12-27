@@ -14,5 +14,11 @@ import java.util.List;
 public interface MainView extends BaseView {
 
     void onCakeLoaded(List<Cake> cakes);
+
+    void onShowDialog(String message);
+
+    void onShowToast(String message);
+
+    void onHideDialog();
 }
 

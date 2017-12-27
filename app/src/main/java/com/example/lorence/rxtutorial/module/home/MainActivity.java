@@ -3,7 +3,9 @@ package com.example.lorence.rxtutorial.module.home;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
+import com.example.lorence.rxtutorial.R;
 import com.example.lorence.rxtutorial.R.layout;
 import com.example.lorence.rxtutorial.base.BaseActivity;
 import com.example.lorence.rxtutorial.di.components.DaggerCakeComponent;
@@ -26,6 +28,8 @@ import javax.inject.Inject;
  */
 
 public class MainActivity extends BaseActivity implements MainView {
+
+
 
     @Inject
     protected CakePresenter mPresenter;
@@ -56,14 +60,30 @@ public class MainActivity extends BaseActivity implements MainView {
      */
     @Override
     protected void resolveDaggerDependency() {
+        Log.i("TAG", getString(R.string.MainActivity));
         DaggerCakeComponent.builder()
                 .applicationComponent(getApplicationComponent())
                 .cakeModule(new CakeModule(this))
-                .build().inject(this);
+                .build().inject(this); // inject(this) => inject CakeModule into MainActivity
     }
 
     @Override
     public void onCakeLoaded(List<Cake> cakes) {
         Log.i("TAG", "MainActivity: " + cakes.get(0).getDetailDescription());
+    }
+
+    @Override
+    public void onShowDialog(String message) {
+        showDialog(message);
+    }
+
+    @Override
+    public void onShowToast(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onHideDialog() {
+        hideDialog();
     }
 }

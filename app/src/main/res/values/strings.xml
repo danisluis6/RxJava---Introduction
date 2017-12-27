@@ -3,4 +3,11 @@
 
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- Structure -->
+    <string name="CakeApplication">CakeApplication -> initializeApplicationComponent -> DaggerComponent</string>
+    <string name="ApplicationModule">ApplicationModule -> ApplicationModule(Constructor)</string>
+    <string name="MainActivity">MainActivity -> initializeApplicationComponent -> DaggerComponent</string>
+    <string name="CakeModule">CakeModule -> CakeModule(Constructor)</string>
+    <string name="CakePresenter">CakePresenter -> CakePresenter(Constructor)</string>
 </resources>
