@@ -25,7 +25,7 @@ public class CakeApplication extends Application {
 
     @Override
     public void onCreate() {
-        super.onCreate();https://github.com/danisluis6/RxJava-Introduction
+        super.onCreate();
         initializeApplicationComponent();
     }
 
