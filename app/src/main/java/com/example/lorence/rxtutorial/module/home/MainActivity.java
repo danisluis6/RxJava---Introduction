@@ -2,6 +2,8 @@ package com.example.lorence.rxtutorial.module.home;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -18,6 +20,8 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import butterknife.BindView;
+
 /**
  * Created by lorence on 25/12/2017.
  *
@@ -29,7 +33,8 @@ import javax.inject.Inject;
 
 public class MainActivity extends BaseActivity implements MainView {
 
-
+    @BindView(R.id.rcvCakes)
+    RecyclerView rcvCakes;
 
     @Inject
     protected CakePresenter mPresenter;
@@ -42,7 +47,14 @@ public class MainActivity extends BaseActivity implements MainView {
     @Override
     protected void onViewReady(Bundle savedInstanceState, Intent intent) {
         super.onViewReady(savedInstanceState, intent);
+        initializeList();
         mPresenter.getCakes();
+    }
+
+    private void initializeList() {
+        rcvCakes.setHasFixedSize(true);
+        rcvCakes.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        rcvCakes.setAdapter(null); // TODO
     }
 
     /**
