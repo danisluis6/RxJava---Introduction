@@ -86,6 +86,11 @@ public interface ApplicationComponent {
      * [ ------ MODE ------ ]
      *
      * * Example:
+     *
+     * PROBLEM 1: Why CakePresenter, we @Inject(CakeMapper) or @Inject(CakeApiService)
+     * -> Why CakeAdapter, we @Inject(Context) => Null Pointer Exception
+     * [SOLVE]
+     *
      */
     Retrofit exposeRetrofit();
 

@@ -1,5 +1,6 @@
 package com.example.lorence.rxtutorial.module.home;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -13,6 +14,7 @@ import com.example.lorence.rxtutorial.base.BaseActivity;
 import com.example.lorence.rxtutorial.di.components.DaggerCakeComponent;
 import com.example.lorence.rxtutorial.di.module.CakeModule;
 import com.example.lorence.rxtutorial.data.model.Cake;
+import com.example.lorence.rxtutorial.module.home.adapter.CakeAdapter;
 import com.example.lorence.rxtutorial.mvp.presenter.CakePresenter;
 import com.example.lorence.rxtutorial.mvp.view.MainView;
 
@@ -20,7 +22,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import butterknife.BindView;
+import butterknife.Bind;
 
 /**
  * Created by lorence on 25/12/2017.
@@ -33,11 +35,14 @@ import butterknife.BindView;
 
 public class MainActivity extends BaseActivity implements MainView {
 
-    @BindView(R.id.rcvCakes)
-    RecyclerView rcvCakes;
+    @Bind(R.id.rcvCakes)
+    public RecyclerView rcvCakes;
 
     @Inject
     protected CakePresenter mPresenter;
+    @Inject Context mContext;
+
+    private CakeAdapter mCakeAdapter;
 
     @Override
     protected int getContentView() {
@@ -54,7 +59,8 @@ public class MainActivity extends BaseActivity implements MainView {
     private void initializeList() {
         rcvCakes.setHasFixedSize(true);
         rcvCakes.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        rcvCakes.setAdapter(null); // TODO
+        mCakeAdapter = new CakeAdapter(mContext, getLayoutInflater());
+        rcvCakes.setAdapter(mCakeAdapter);
     }
 
     /**
@@ -72,7 +78,6 @@ public class MainActivity extends BaseActivity implements MainView {
      */
     @Override
     protected void resolveDaggerDependency() {
-        Log.i("TAG", getString(R.string.MainActivity));
         DaggerCakeComponent.builder()
                 .applicationComponent(getApplicationComponent())
                 .cakeModule(new CakeModule(this))
@@ -81,7 +86,7 @@ public class MainActivity extends BaseActivity implements MainView {
 
     @Override
     public void onCakeLoaded(List<Cake> cakes) {
-        Log.i("TAG", "MainActivity: " + cakes.get(0).getDetailDescription());
+        mCakeAdapter.addCakes(cakes);
     }
 
     @Override

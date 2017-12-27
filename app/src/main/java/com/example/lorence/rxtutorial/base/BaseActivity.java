@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import com.example.lorence.rxtutorial.application.CakeApplication;
 import com.example.lorence.rxtutorial.di.components.ApplicationComponent;
 
+import butterknife.ButterKnife;
+
 /**
  * Created by lorence on 25/12/2017.
  * @version version7
@@ -25,6 +27,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getContentView());
+        ButterKnife.bind(this);
         onViewReady(savedInstanceState, getIntent());
     }
 
@@ -32,6 +35,12 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onViewReady(Bundle savedInstanceState, Intent intent) {
         // To be used by child activities
         resolveDaggerDependency();
+    }
+
+    @Override
+    protected void onDestroy() {
+        ButterKnife.unbind(this);
+        super.onDestroy();
     }
 
     protected void resolveDaggerDependency() {
