@@ -80,8 +80,8 @@ public class CakePresenter extends BasePresenter<MainView> implements Observer<C
      * MVP
      * => CakeModule -/- CakeMapper
      */
-     @Inject protected CakeApiService mApiService;
-     @Inject protected CakeMapper mCakeMapper;
+    @Inject protected CakeApiService mApiService;
+    @Inject protected CakeMapper mCakeMapper;
 
     @Inject
     public CakePresenter() {
