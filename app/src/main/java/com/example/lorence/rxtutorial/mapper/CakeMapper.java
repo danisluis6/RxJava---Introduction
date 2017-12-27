@@ -5,6 +5,7 @@ import android.util.Log;
 import com.example.lorence.rxtutorial.data.model.Cake;
 import com.example.lorence.rxtutorial.data.api.response.CakesResponse;
 import com.example.lorence.rxtutorial.data.api.response.CakesResponseCakes;
+import com.example.lorence.rxtutorial.data.storage.Storage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,8 @@ import javax.inject.Inject;
  */
 
 public class CakeMapper {
+
+    @Inject protected Storage mStorage;
 
     @Inject
     public CakeMapper() {
@@ -38,6 +41,7 @@ public class CakeMapper {
                     myCake.setDetailDescription(cake.getDetailDescription());
                     myCake.setPreviewDescription(cake.getPreviewDescription());
                     myCake.setImageUrl(cake.getImage());
+                    mStorage.addCake(myCake);
                     cakeList.add(myCake);
                 }
             }
