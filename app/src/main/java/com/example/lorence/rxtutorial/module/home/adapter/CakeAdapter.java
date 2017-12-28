@@ -39,6 +39,11 @@ public class CakeAdapter extends RecyclerView.Adapter<CakeAdapter.ViewHolder>{
         mLayoutInflater = inflater;
     }
 
+    public void clearCakes() {
+        mCakeList.clear();
+        notifyDataSetChanged();
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         /** Get it from Module/Component */

@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.example.lorence.rxtutorial.R;
@@ -17,6 +16,7 @@ import com.example.lorence.rxtutorial.data.model.Cake;
 import com.example.lorence.rxtutorial.module.home.adapter.CakeAdapter;
 import com.example.lorence.rxtutorial.mvp.presenter.CakePresenter;
 import com.example.lorence.rxtutorial.mvp.view.MainView;
+import com.example.lorence.rxtutorial.utilities.Utils;
 
 import java.util.List;
 
@@ -53,7 +53,13 @@ public class MainActivity extends BaseActivity implements MainView {
     protected void onViewReady(Bundle savedInstanceState, Intent intent) {
         super.onViewReady(savedInstanceState, intent);
         initializeList();
-        mPresenter.getCakes();
+        if (Utils.isInternetOn(mContext)) {
+            // Get data from Api and save storage, view outside.
+            mPresenter.getCakes();
+        } else {
+            // View result
+            mPresenter.getCakesFromDatabase();
+        }
     }
 
     private void initializeList() {
@@ -102,5 +108,10 @@ public class MainActivity extends BaseActivity implements MainView {
     @Override
     public void onHideDialog() {
         hideDialog();
+    }
+
+    @Override
+    public void onClearItems() {
+        mCakeAdapter.clearCakes();
     }
 }

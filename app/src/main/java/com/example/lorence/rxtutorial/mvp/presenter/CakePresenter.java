@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.example.lorence.rxtutorial.base.BasePresenter;
 import com.example.lorence.rxtutorial.data.api.CakeApiService;
+import com.example.lorence.rxtutorial.data.storage.Storage;
 import com.example.lorence.rxtutorial.mapper.CakeMapper;
 import com.example.lorence.rxtutorial.data.model.Cake;
 import com.example.lorence.rxtutorial.data.api.response.CakesResponse;
@@ -82,6 +83,7 @@ public class CakePresenter extends BasePresenter<MainView> implements Observer<C
      */
     @Inject protected CakeApiService mApiService;
     @Inject protected CakeMapper mCakeMapper;
+    @Inject protected Storage mStorage;
 
     @Inject
     public CakePresenter() {
@@ -108,7 +110,16 @@ public class CakePresenter extends BasePresenter<MainView> implements Observer<C
 
     @Override
     public void onNext(CakesResponse cakesResponse) {
+        // The result is returned from Api service.
         List<Cake> cakes = mCakeMapper.mapCakes(cakesResponse);
+        getView().onClearItems();
+        getView().onCakeLoaded(cakes);
+    }
+
+    public void getCakesFromDatabase() {
+        // No connection and get data directly from local.
+        List<Cake> cakes = mStorage.getSavedCakes();
+        getView().onClearItems();
         getView().onCakeLoaded(cakes);
     }
 }
