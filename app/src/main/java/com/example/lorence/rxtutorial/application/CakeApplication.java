@@ -22,6 +22,8 @@ import com.example.lorence.rxtutorial.di.module.ApplicationModule;
  * App will start in here before jumping Activity
  * @link https://proandroiddev.com/dagger-2-part-ii-custom-scopes-component-dependencies-subcomponents-697c1fa1cfc
  * @link https://www.youtube.com/watch?v=c0BMD30dbxE
+ *
+ * @link(https://github.com/filippella/Dagger-Rx-Database-MVP)
  */
 
 public class CakeApplication extends Application {

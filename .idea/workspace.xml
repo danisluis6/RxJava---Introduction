@@ -11,20 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d366868c-fcc0-48ed-baae-e9988230bd75" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/utilities/Constants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/utilities/Utils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_library_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_library_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/home/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/home/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/home/adapter/CakeAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/home/adapter/CakeAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/mvp/presenter/CakePresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/mvp/presenter/CakePresenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/mvp/view/MainView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/mvp/view/MainView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/application/CakeApplication.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/application/CakeApplication.java" />
     </list>
     <ignored path="RxJava-Introduction.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,7 +49,7 @@
       <file leaf-file-name="Storage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/data/storage/Storage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="510">
               <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -71,7 +61,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/home/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
+            <state relative-caret-position="1440">
               <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -82,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CakeAdapter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CakeAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/home/adapter/CakeAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="71" column="39" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
+            <state relative-caret-position="261">
+              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,10 +84,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CakeApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/application/CakeApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CakePresenter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/mvp/presenter/CakePresenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
+            <state relative-caret-position="1440">
               <caret line="113" column="63" selection-start-line="113" selection-start-column="63" selection-end-line="113" selection-end-column="63" />
               <folding />
             </state>
@@ -2025,6 +2025,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/home/adapter/CakeAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/home/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/mvp/presenter/CakePresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/application/CakeApplication.java" />
       </list>
     </option>
   </component>
@@ -2063,6 +2064,7 @@
       <pane id="ProjectPane">
         <subPane />
       </pane>
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2130,11 +2132,10 @@
       <pane id="PackagesPane">
         <subPane />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="CakePres&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/mvp/presenter/CakePresenter.java&#10;Storage&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/data/storage/Storage.java&#10;CakePrese&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/mvp/presenter/CakePresenter.java&#10;MainAc&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/module/home/MainActivity.java&#10;CakeApplica&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/application/CakeApplication.java&#10;CakeMa&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/mapper/CakeMapper.java&#10;App&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/di/module/ApplicationModule.java&#10;Appcompo&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/di/components/ApplicationComponent.java&#10;Base&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/base/BaseActivity.java&#10;BaseAc&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/base/BaseActivity.java&#10;MainA&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/module/home/MainActivity.java" />
+    <property name="SearchEverywhereHistoryKey" value="CakeApp&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/application/CakeApplication.java&#10;CakePres&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/mvp/presenter/CakePresenter.java&#10;Storage&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/data/storage/Storage.java&#10;CakePrese&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/mvp/presenter/CakePresenter.java&#10;MainAc&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/module/home/MainActivity.java&#10;CakeApplica&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/application/CakeApplication.java&#10;CakeMa&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/mapper/CakeMapper.java&#10;App&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/di/module/ApplicationModule.java&#10;Appcompo&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/di/components/ApplicationComponent.java&#10;Base&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/base/BaseActivity.java&#10;BaseAc&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/base/BaseActivity.java&#10;MainA&#9;FILE&#9;file:///home/lorence/Desktop/RxJava-Introduction/app/src/main/java/com/example/lorence/rxtutorial/module/home/MainActivity.java" />
     <property name="VectorAssetImportPath" value="$PROJECT_DIR$/.." />
     <property name="device.picker.selection" value="RQ3002E9SP" />
     <property name="settings.editor.selected.configurable" value="gradle.compiler" />
@@ -2601,9 +2602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2689,7 +2687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2705,9 +2702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2752,7 +2746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="57" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -2773,7 +2766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="12" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2805,16 +2797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/application/CakeApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-          <folding>
-            <element signature="e#1412#1447#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/utilities/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -2837,7 +2819,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/data/storage/Storage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="510">
           <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2847,7 +2829,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/home/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
+        <state relative-caret-position="1440">
           <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2859,7 +2841,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/mvp/presenter/CakePresenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
+        <state relative-caret-position="1440">
           <caret line="113" column="63" selection-start-line="113" selection-start-column="63" selection-end-line="113" selection-end-column="63" />
           <folding />
         </state>
@@ -2867,11 +2849,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/module/home/adapter/CakeAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="71" column="39" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
+        <state relative-caret-position="261">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/application/CakeApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
