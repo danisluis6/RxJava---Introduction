@@ -16,8 +16,6 @@ import com.example.lorence.rxtutorial.data.model.Cake;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.inject.Inject;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -28,13 +26,14 @@ import butterknife.ButterKnife;
  * @since 12/25/2017
  */
 
-public class CakeAdapter extends RecyclerView.Adapter<CakeAdapter.ViewHolder>{
+public class CakeAdapter extends RecyclerView.Adapter<CakeAdapter.ViewHolder> {
 
     private LayoutInflater mLayoutInflater;
     private Context mContext;
     private List<Cake> mCakeList = new ArrayList<>();
 
     public CakeAdapter(Context context, LayoutInflater inflater) {
+        super();
         mContext = context;
         mLayoutInflater = inflater;
     }
@@ -47,8 +46,6 @@ public class CakeAdapter extends RecyclerView.Adapter<CakeAdapter.ViewHolder>{
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         /** Get it from Module/Component */
-        // private Context mContext;
-
         @Bind(R.id.cake_icon)
         ImageView imvCakeIcon;
 
@@ -60,7 +57,6 @@ public class CakeAdapter extends RecyclerView.Adapter<CakeAdapter.ViewHolder>{
 
         ViewHolder(View itemView) {
             super(itemView);
-            // mContext = itemView.getContext();
             ButterKnife.bind(this, itemView);
         }
 
@@ -93,4 +89,12 @@ public class CakeAdapter extends RecyclerView.Adapter<CakeAdapter.ViewHolder>{
         notifyDataSetChanged();
     }
 
+    @Override
+    public String toString() {
+        return "CakeAdapter{" +
+                "mLayoutInflater=" + mLayoutInflater +
+                ", mContext=" + mContext +
+                ", mCakeList=" + mCakeList +
+                '}';
+    }
 }

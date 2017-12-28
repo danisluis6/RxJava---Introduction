@@ -38,8 +38,7 @@ public class MainActivity extends BaseActivity implements MainView {
     @Bind(R.id.rcvCakes)
     public RecyclerView rcvCakes;
 
-    @Inject
-    protected CakePresenter mPresenter;
+    @Inject CakePresenter mPresenter;
     @Inject Context mContext;
 
     private CakeAdapter mCakeAdapter;

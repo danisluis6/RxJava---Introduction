@@ -71,7 +71,7 @@ public class Storage extends SQLiteOpenHelper {
 
     public List<Cake> getSavedCakes() {
         List<Cake> cakeList = new ArrayList<>();
-        SQLiteDatabase db = this.getWritableDatabase();
+        SQLiteDatabase db = getWritableDatabase();
 
         try {
             Cursor cursor = db.rawQuery(SELECT_QUERY, null);
