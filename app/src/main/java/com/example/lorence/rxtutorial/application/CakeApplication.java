@@ -1,9 +1,7 @@
 package com.example.lorence.rxtutorial.application;
 
 import android.app.Application;
-import android.util.Log;
 
-import com.example.lorence.rxtutorial.R;
 import com.example.lorence.rxtutorial.di.components.ApplicationComponent;
 import com.example.lorence.rxtutorial.di.components.DaggerApplicationComponent;
 import com.example.lorence.rxtutorial.di.module.ApplicationModule;
@@ -43,7 +41,6 @@ public class CakeApplication extends Application {
      * => We already have these params above
      */
     protected void initializeApplicationComponent() {
-        Log.i("TAG", getString(R.string.CakeApplication));
         mApplicationComponent = DaggerApplicationComponent.builder()
                 .applicationModule(new ApplicationModule(this, "https://gist.githubusercontent.com"))
                 .build();

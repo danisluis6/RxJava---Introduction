@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.google.dagger:dagger-compiler:2.1@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-compiler/2.1/44f3d8e4b776c0d2f9ba6c248f5ff680ec29856d/dagger-compiler-2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

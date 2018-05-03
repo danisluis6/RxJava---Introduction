@@ -3,6 +3,15 @@
 
     <item
         is-multidex="false"
+        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.4.0/fc4aa382632bfaa7be7b41579efba41d5a71ecf3/retrofit-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fc4aa382632bfaa7be7b41579efba41d5a71ecf3">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/retrofit-2.4.0_790148d3dcde822ca3712060ed154bdb17fcf939.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/lorence/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.3.0/af000bec2036a2a9d07197c4b03b8966bfc60b03/rxjava-1.3.0.jar"
         jumboMode="false"
         optimize="true"
@@ -18,15 +27,6 @@
         revision="26.0.2"
         sha1="db09a97f4f0db8892c1a0111a4b966f97920d082">
         <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0_def89944029bdee10cc4100c7b3f6a366680ce06.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.3.0/9e09011e9767bb76b5e27c9b8223476b93b14631/converter-gson-2.3.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="9e09011e9767bb76b5e27c9b8223476b93b14631">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/converter-gson-2.3.0_06165184dee67c4551d2bf2f63cfbb72d1330a4b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -84,21 +84,21 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.10.0/7ef0f1d95bf4c0b3ba30bbae25e0e562b05cf75e/okhttp-3.10.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="7ef0f1d95bf4c0b3ba30bbae25e0e562b05cf75e">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/okhttp-3.10.0_dd40a9a415e99b6401c9f43ad1964392d80c05f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/lorence/.android/build-cache/1909b2e4e02703064dd6227c90fc9452a086a475/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.2"
         sha1="db0171d21d064bab7ad72685f3c7df40544b03a8">
         <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/classes_4fc9f0de6382229f8aea4a9ea0c6e0c791a226c1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.3.0/bcacde6a8ccedcc56c127403d26b76072fe6214d/retrofit-2.3.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="bcacde6a8ccedcc56c127403d26b76072fe6214d">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/retrofit-2.3.0_b4257c9129431ec0f90149edb629d9409859937c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -111,15 +111,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/okio-1.13.0_9a322af261459dad090c18becf3eef3bf2344fec.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.1/73ce0d997524a7fd3b06cfc7adbb9e9ef4854754/dagger-2.1.jar"
         jumboMode="false"
         optimize="true"
@@ -129,21 +120,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.3.0/43e4ac24adc40a24c51b2d2a71a2483ef1b0ce9a/adapter-rxjava-2.3.0.jar"
+        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.2/3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf/gson-2.8.2.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.2"
-        sha1="43e4ac24adc40a24c51b2d2a71a2483ef1b0ce9a">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/adapter-rxjava-2.3.0_e53e1a86a1fb911615ce9a80672003f31425547a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.0/5a11f020cce2d11eb71ba916700600e18c4547e7/okhttp-3.8.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="5a11f020cce2d11eb71ba916700600e18c4547e7">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/okhttp-3.8.0_c5f7a7351ab399355b0a21fd165d88b697fd9591.jar" />
+        sha1="3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/gson-2.8.2_494694cf90725a22cff6a45757926acd7bc4ee6c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -153,15 +135,6 @@
         revision="26.0.2"
         sha1="d30ac0c26495d7264529e333cec806eec64dd6f3">
         <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/classes_effb11364934f58df3141b6079bc1f45f3da796e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/gson-2.7_70f1850ea41273fef1c069f2e9a03f8f6ded7a23.jar" />
     </item>
     <item
         is-multidex="false"
@@ -182,13 +155,13 @@
         <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/glide-3.7.0_7a5e03de0baf52ba715d977c6f6974bcbf20a59e.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.4.0/6c6372338fca45a6c2e0f7a5dda4b0a4b9159e58/adapter-rxjava-2.4.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.2"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_5a428f025d9a5a86e9f988ba3aba40a82cf0cdb3/classes.dex" />
+        sha1="6c6372338fca45a6c2e0f7a5dda4b0a4b9159e58">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/adapter-rxjava-2.4.0_417bcaab240771a6f4329a62d95e67fd5910b141.jar" />
     </item>
     <item
         is-multidex="false"
@@ -209,13 +182,13 @@
         <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/classes_6abd57f37327ea31cf09ba3832fbd9ca8656cb68.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.14.0/102d7be47241d781ef95f1581d414b0943053130/okio-1.14.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.2"
-        sha1="065b43a4805dadcce534d068596b1124db1241d4">
-        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_238c166930a8ea18efdc4849f0988f0feb9102a4/classes.dex" />
+        sha1="102d7be47241d781ef95f1581d414b0943053130">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/okio-1.14.0_a3f1a968b59adb557f5e188235f1977ef49531b1.jar" />
     </item>
     <item
         is-multidex="false"
@@ -234,6 +207,15 @@
         revision="26.0.2"
         sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
         <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/butterknife-7.0.1_519ed5ae779c594c335efc96c963af41cec5b0e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lorence/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.4.0/15d7790ee311d961379c51b00aba12d5967cb7ea/converter-gson-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="15d7790ee311d961379c51b00aba12d5967cb7ea">
+        <dex dex="/home/lorence/Desktop/RxJava-Introduction/app/build/intermediates/pre-dexed/debug/converter-gson-2.4.0_5c98ac1a142a8371d76ffbbbf33f47eafe1af8ed.jar" />
     </item>
     <item
         is-multidex="false"
