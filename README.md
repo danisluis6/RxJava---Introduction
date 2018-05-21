@@ -462,8 +462,8 @@ Flowable<List<Node>> flowable = Flowable.fromArray(testGetNodes());
                     }
                 });
 ```
-<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Continue with <b>Observable.create</b>
 ![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/6.png)
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Continue with <b>Observable.create</b>
 ```java
 Observable<Node> observable = Observable.create(new ObservableOnSubscribe<Node>() {
             @Override
@@ -480,3 +480,38 @@ Observable<Node> observable = Observable.create(new ObservableOnSubscribe<Node>(
             }
         });
 ```
+We using to make sure. No issues or bugs with list of nodes.
+```java
+for (Node node : nodes) {
+	emitter.onNext(node);
+}
+emitter.onComplete();
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Maybe in reality</b>
+```java
+@Query("SELECT * FROM "+ DatabaseInfo.Tables.Listing)
+Maybe<List<Listing>> getListings();
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Maybe in example</b>
+```java
+Maybe<List<Node>> way1 = (Maybe<List<Node>>) testGetNodes();
+        Maybe<List<Node>> way2 = Maybe.create(new MaybeOnSubscribe<List<Node>>() {
+            @Override
+            public void subscribe(MaybeEmitter<List<Node>> emitter) throws Exception {
+                try {
+                    List<Node> nodes = testGetNodes();
+                    if(nodes != null && !nodes.isEmpty()) {
+                        emitter.onSuccess(nodes);
+                    } else {
+                        emitter.onComplete();
+                    }
+                } catch (Exception e) {
+                    emitter.onError(e);
+                }
+            }
+        });
+```
+
+
+
+
