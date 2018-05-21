@@ -49,8 +49,36 @@ import java.util.List;
    
 <img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/c.png" width="24px" height="24px"/>  Create variable to contain these observers<br>
 <img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/c.png" width="24px" height="24px"/>  Attach observer from outside of scope of object<br>
-<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/c.png" width="24px" height="24px"/>  Implement sync when update its object with other observer
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/c.png" width="24px" height="24px"/>  Implement sync when update its object with other observer<br>
+```java
+import java.util.ArrayList;
+import java.util.List;
 
+  public class Subject {
+
+  private List<Observer> observers 
+        = new ArrayList<Observer>();
+  private int state;
+
+  public int getState() {
+    return state;
+  }
+
+ public void setState(int state) {
+   this.state = state;
+   notifyAllObservers();
+ }
+
+   public void attach(Observer observer){
+     observers.add(observer);       
+   }
+
+  public void notifyAllObservers(){
+    for (Observer observer : observers) {
+     observer.update();
+  }
+} 
+```
 
 
 
