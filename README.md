@@ -404,5 +404,12 @@ public class Main {
 	}
 }
 
-
 ```
+## Build blocks for RxJava
+The build blocks for RxJava code are the following:
+- <b>observables</b> representing sources of data
+- <b>subscribers</b> (or observers) listening to the observables 
+- a set of methods for modifying and composing the data
+An observable emits items; a subscriber consumes those items.
+
+
