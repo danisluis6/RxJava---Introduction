@@ -155,5 +155,28 @@ public class ObserverPatternDemo {
 ## We research about "Iterator Design Pattern in Java"
 ``Java developers have to be familiar with the Iterator interface:``
 ![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/2.png)
+```java
+import java.util.ArrayList;
+import java.util.Iterator;
 
+
+public class IteratorExample {
+	public static void main(String[] args) {
+		// iterators
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(3);
+		list.add(6);
+		list.add(11);
+		for (Iterator<Integer> it = list.iterator(); it.hasNext();) {
+			Integer i = it.next();
+			System.out.println(""+i);
+		}
+		Iterator<Integer> it = list.iterator();
+		it.next();
+		it.next();
+		it.remove();
+		System.out.println(list);
+	}
+}
+```
    
