@@ -155,5 +155,261 @@ public class ObserverPatternDemo {
 ## We research about "Iterator Design Pattern in Java"
 ``Java developers have to be familiar with the Iterator interface:``
 ![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/2.png)
+```java
+import java.util.ArrayList;
+import java.util.Iterator;
 
-   
+
+public class IteratorExample {
+	public static void main(String[] args) {
+		// iterators
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(3);
+		list.add(6);
+		list.add(11);
+		for (Iterator<Integer> it = list.iterator(); it.hasNext();) {
+			Integer i = it.next();
+			System.out.println(""+i);
+		}
+		Iterator<Integer> it = list.iterator();
+		it.next();
+		it.next();
+		it.remove();
+		System.out.println(list);
+	}
+}
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Upgrade level 1
+```java
+package upgrade;
+
+@SuppressWarnings("all")
+public class Shape {
+	private int id;
+	private String name;
+	
+	Shape(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+	
+	@Override
+	public String toString() {
+		return name;
+	}
+}
+
+package upgrade;
+
+@SuppressWarnings("all")
+public class Main {
+	public static void main(String[] args) {
+		Shape rectangle = new Shape(1, "Rectangle");
+		Shape square = new Shape(2, "Square");
+		Shape circle = new Shape(3, "Circle");
+		Shape triangle = new Shape(4, "Triangle");
+		
+		ShapeStorage shapeStorage = new ShapeStorage();
+		shapeStorage.add(rectangle);
+		shapeStorage.add(square);
+		shapeStorage.add(circle);
+		shapeStorage.add(triangle);
+		
+		// Create an iterator to iterate through this collection
+	}
+}
+
+package upgrade;
+
+@SuppressWarnings("all")
+public class ShapeStorage {
+
+	private Shape[] shapes = new Shape[4];
+	private int index = 0;
+	
+	public void add(Shape shape) {
+		shapes[index] = shape;
+		index++;
+	}
+
+}
+
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Create method to get list (<b>Object Collection</b>)
+### <b>Create an iterator to iterate through this collection</b>
+
+```java
+public Shape[] getShapes() {
+	return shapes;
+}
+	
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Embed Iterator into Collection and access element of collection easily.
+
+```java
+package upgrade;
+
+import java.util.Iterator;
+import java.util.function.Consumer;
+
+@SuppressWarnings("all")
+public class ShapeInterator implements Iterator<Shape> {
+
+	private Shape[] shapes;
+	private int index = 0;
+
+	public ShapeInterator(Shape[] shapes) {
+		this.shapes = shapes;
+	}
+
+	public void forEachRemaining(Consumer<? super Shape> arg0) {
+		// TODO Auto-generated method stub
+	}
+
+	public boolean hasNext() {
+		if (index < shapes.length) {
+			return true;
+		}
+		return false;
+	}
+
+	public Shape next() {
+		if (this.hasNext()) {
+			return shapes[index++];
+		}
+		return null;
+	}
+
+	public void remove() {
+		for (int i = index - 1; i < shapes.length - 1; i++) {
+			shapes[i] = shapes[i+1];
+		}
+		shapes[shapes.length - 1] = null;
+	}
+
+}
+
+package upgrade;
+
+@SuppressWarnings("all")
+public class Main {
+	public static void main(String[] args) {
+		Shape rectangle = new Shape(1, "Rectangle");
+		Shape square = new Shape(2, "Square");
+		Shape circle = new Shape(3, "Circle");
+		Shape triangle = new Shape(4, "Triangle");
+		
+		ShapeStorage shapeStorage = new ShapeStorage();
+		shapeStorage.add(rectangle);
+		shapeStorage.add(square);
+		shapeStorage.add(circle);
+		shapeStorage.add(triangle);
+		
+		// Create an iterator to iterate through this collection
+		ShapeInterator iterator = new ShapeInterator(shapeStorage.getShapes());
+		while(iterator.hasNext()) {
+			System.out.println(iterator.next());
+		}
+		
+		iterator.next();
+		iterator.remove();
+	}
+}
+
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> 
+
+```java
+package upgrade;
+
+@SuppressWarnings("all")
+public class Shape {
+	private int id;
+	private String name;
+	
+	Shape(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+	
+	@Override
+	public String toString() {
+		return name;
+	}
+}
+
+package upgrade;
+
+@SuppressWarnings("all")
+public class ShapeStorage {
+
+	private Shape[] shapes = { new Shape(1, "Rectangle"),
+			new Shape(2, "Square"), new Shape(3, "Circle"),
+			new Shape(4, "Triangle") };
+
+	public Iterator getShaIterator() {
+		return new ShapeInterator();
+	}
+	
+	interface Iterator {
+		
+		boolean hasNext();
+
+		Object next();
+
+		void remove();
+	}
+
+	class ShapeInterator implements Iterator {
+
+		private int index = 0;
+
+		public boolean hasNext() {
+			if (index < shapes.length) {
+				return true;
+			}
+			return false;
+		}
+
+		public Shape next() {
+			if (this.hasNext()) {
+				return shapes[index++];
+			}
+			return null;
+		}
+
+		public void remove() {
+			for (int i = index - 1; i < shapes.length - 1; i++) {
+				shapes[i] = shapes[i + 1];
+			}
+			shapes[shapes.length - 1] = null;
+		}
+	}
+}
+
+package upgrade;
+
+import upgrade.ShapeStorage.Iterator;
+
+
+@SuppressWarnings("all")
+public class Main {
+	public static void main(String[] args) {
+		// Create an iterator to iterate through this collection
+		ShapeStorage shapeStorage = new ShapeStorage();
+	      for(Iterator iter = shapeStorage.getShaIterator(); iter.hasNext();){
+	         Shape shape = (Shape)iter.next();
+	         System.out.println(shape.toString());
+	      }   
+	}
+}
+
+```
+## Build blocks for RxJava
+The build blocks for RxJava code are the following:
+- <b>observables</b> representing sources of data
+- <b>subscribers</b> (or observers) listening to the observables 
+- a set of methods for modifying and composing the data
+An observable emits items; a subscriber consumes those items.
+
+
