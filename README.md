@@ -153,6 +153,7 @@ public class ObserverPatternDemo {
 }
 ```
 ## We research about "Iterator Design Pattern in Java"
-
+``Java developers have to be familiar with the Iterator interface:``
+![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/2.png)
 
    
