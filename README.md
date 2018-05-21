@@ -45,4 +45,4 @@ import java.util.List;
  }
 }   
 ```
-![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/1.png) (Apply Observers)
+![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png) (Apply Observers)
