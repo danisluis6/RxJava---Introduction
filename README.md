@@ -46,3 +46,4 @@ import java.util.List;
 }   
 ```
 ![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png) (Apply Observers)
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="24px" height="24px"/>
