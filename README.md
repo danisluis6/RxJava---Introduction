@@ -462,8 +462,8 @@ Flowable<List<Node>> flowable = Flowable.fromArray(testGetNodes());
                     }
                 });
 ```
-<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Continue with <b>Observable.create</b>
 ![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/6.png)
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Continue with <b>Observable.create</b>
 ```java
 Observable<Node> observable = Observable.create(new ObservableOnSubscribe<Node>() {
             @Override
@@ -479,4 +479,227 @@ Observable<Node> observable = Observable.create(new ObservableOnSubscribe<Node>(
                 }
             }
         });
+```
+We using to make sure. No issues or bugs with list of nodes.
+```java
+for (Node node : nodes) {
+	emitter.onNext(node);
+}
+emitter.onComplete();
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Maybe in reality</b>
+```java
+@Query("SELECT * FROM "+ DatabaseInfo.Tables.Listing)
+Maybe<List<Listing>> getListings();
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Maybe in example</b>
+```java
+Maybe<List<Node>> way1 = (Maybe<List<Node>>) testGetNodes();
+Maybe<List<Node>> way2 = Maybe.create(new MaybeOnSubscribe<List<Node>>() {
+    @Override
+    public void subscribe(MaybeEmitter<List<Node>> emitter) throws Exception {
+	try {
+	    List<Node> nodes = testGetNodes();
+	    if(nodes != null && !nodes.isEmpty()) {
+		emitter.onSuccess(nodes);
+	    } else {
+		emitter.onComplete();
+	    }
+	} catch (Exception e) {
+	    emitter.onError(e);
+	}
+    }
+});
+```
+
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Perfect</b>
+```java
+ public class FlowableExampleActivity extends AppCompatActivity {
+
+    private static final String TAG = FlowableExampleActivity.class.getSimpleName();
+    Button btn;
+    TextView textView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_example);
+        btn = (Button) findViewById(R.id.btn);
+        textView = (TextView) findViewById(R.id.textView);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                doSomeWork();
+            }
+        });
+    }
+
+    /*
+     * simple example using Flowable
+     */
+    private void doSomeWork() {
+
+        Flowable<Integer> observable = Flowable.just(1, 2, 3, 4);
+
+        observable.reduce(50, new BiFunction<Integer, Integer, Integer>() {
+            @Override
+            public Integer apply(Integer t1, Integer t2) {
+                return t1 + t2;
+            }
+        }).subscribe(getObserver());
+
+    }
+
+    private SingleObserver<Integer> getObserver() {
+
+     return new SingleObserver<Integer>() {
+        @Override
+        public void onSubscribe(Disposable d) {
+            Log.d(TAG, " onSubscribe : " + d.isDisposed());
+        }
+
+        @Override
+        public void onSuccess(Integer value) {
+            Log.d(TAG, " onSuccess : value : " + value);
+        }
+
+        @Override
+        public void onError(Throwable e) {
+            Log.d(TAG, " onError : " + e.getMessage());
+        }
+    };
+}
+}
+```
+### Subscribing in RxJava
+To receive the data emitted from an observable you need to subscribe to it. observables offer a large variety of subscribe methods.
+```java
+static class GetAll extends AsyncTask<Void, Void, Void> {
+@Override
+protected Void doInBackground(Void... voids) {
+    mListingDao.getListings().subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Consumer<List<Listing>>() {
+	@Override
+	public void accept(@io.reactivex.annotations.NonNull List<Listing> listings) throws Exception {
+	    mPresenter.onGetListingsSuccess(listings);
+	}
+    });
+    return null;
+}
+}
+```
+There are two common ways to get it
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Way 1
+```java
+way2.subscribeWith(new DisposableMaybeObserver<List<Node>>() {
+            @Override
+            public void onSuccess(List<Node> nodes) {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        });
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Way 2 (Observable + DisposableObserver)
+```java
+Observable<Node> observable =Observable.create(new ObservableOnSubscribe<Node>() {
+            @Override
+            public void subscribe(ObservableEmitter<Node> emitter) throws Exception {
+                try {
+                    List<Node> nodes = testGetNodes();
+                    for (Node node : nodes) {
+                        emitter.onNext(node);
+                    }
+                    emitter.onComplete();
+                } catch (Exception e) {
+                    emitter.onError(e);
+                }
+            }
+        });
+
+        DisposableObserver<Node> disposable = observable.subscribeWith(new DisposableObserver<Node>() {
+            @Override
+            public void onNext(Node o) {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        });
+
+        // Dispose the subscription when not interested in the emitted data any more
+        disposable.dispose();
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Way 2 (Observable + DisposableObserver)
+
+```java
+Observable<Node> observable =Observable.create(new ObservableOnSubscribe<Node>() {
+            @Override
+            public void subscribe(ObservableEmitter<Node> emitter) throws Exception {
+                try {
+                    List<Node> nodes = testGetNodes();
+                    for (Node node : nodes) {
+                        emitter.onNext(node);
+                    }
+                    emitter.onComplete();
+                } catch (Exception e) {
+                    emitter.onError(e);
+                }
+            }
+        });
+
+        DisposableObserver<Node> disposable = observable.subscribeWith(new DisposableObserver<Node>() {
+            @Override
+            public void onNext(Node o) {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        });
+
+        // Dispose the subscription when not interested in the emitted data any more
+        disposable.dispose();
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Way 2 (Observable + DisposableObserver)
+```java
+Single<List<Todo>> todosSingle = getTodos();
+
+Disposable disposable = todosSingle.subscribeWith(new DisposableSingleObserver<List<Todo>>() {
+
+    @Override
+    public void onSuccess(List<Todo> todos) {
+        // work with the resulting todos
+    }
+
+    @Override
+    public void onError(Throwable e) {
+        // handle the error case
+    }
+});
+
+// continue working and dispose when value of the Single is not interesting any more
+disposable.dispose();
 ```
