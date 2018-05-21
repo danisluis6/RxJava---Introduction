@@ -442,4 +442,8 @@ public class HomeActivity extends AppCompatActivity {
     }
 }
 ```
+#### subscribeOn
+![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/5.png)
+- <b>subscribeOn</b>: Register Asynchronously 
+
 
