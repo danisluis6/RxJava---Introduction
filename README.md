@@ -411,5 +411,5 @@ The build blocks for RxJava code are the following:
 - <b>subscribers</b> (or observers) listening to the observables 
 - a set of methods for modifying and composing the data
 An observable emits items; a subscriber consumes those items.
-
+![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/3.png)
 
