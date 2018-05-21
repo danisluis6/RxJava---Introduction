@@ -11,6 +11,8 @@
 
 ## We Research about "Observe Design Pattern"
 
+
+
 When to use it:
 1. When one object changes its state,then all other dependents object must automatically change their state to maintain consistency
 2. When subject doesn't know about number of observers it has.
