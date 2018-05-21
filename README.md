@@ -235,5 +235,86 @@ public class ShapeStorage {
 }
 
 ```
-<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Upgrade level 2
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Create method to get list (<b>Object Collection</b>)
 ### <b>Create an iterator to iterate through this collection</b>
+
+```java
+public Shape[] getShapes() {
+	return shapes;
+}
+	
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Embed Iterator into Collection and access element of collection easily.
+
+```java
+package upgrade;
+
+import java.util.Iterator;
+import java.util.function.Consumer;
+
+@SuppressWarnings("all")
+public class ShapeInterator implements Iterator<Shape> {
+
+	private Shape[] shapes;
+	private int index = 0;
+
+	public ShapeInterator(Shape[] shapes) {
+		this.shapes = shapes;
+	}
+
+	public void forEachRemaining(Consumer<? super Shape> arg0) {
+		// TODO Auto-generated method stub
+	}
+
+	public boolean hasNext() {
+		if (index < shapes.length) {
+			return true;
+		}
+		return false;
+	}
+
+	public Shape next() {
+		if (this.hasNext()) {
+			return shapes[index++];
+		}
+		return null;
+	}
+
+	public void remove() {
+		for (int i = index - 1; i < shapes.length - 1; i++) {
+			shapes[i] = shapes[i+1];
+		}
+		shapes[shapes.length - 1] = null;
+	}
+
+}
+
+package upgrade;
+
+@SuppressWarnings("all")
+public class Main {
+	public static void main(String[] args) {
+		Shape rectangle = new Shape(1, "Rectangle");
+		Shape square = new Shape(2, "Square");
+		Shape circle = new Shape(3, "Circle");
+		Shape triangle = new Shape(4, "Triangle");
+		
+		ShapeStorage shapeStorage = new ShapeStorage();
+		shapeStorage.add(rectangle);
+		shapeStorage.add(square);
+		shapeStorage.add(circle);
+		shapeStorage.add(triangle);
+		
+		// Create an iterator to iterate through this collection
+		ShapeInterator iterator = new ShapeInterator(shapeStorage.getShapes());
+		while(iterator.hasNext()) {
+			System.out.println(iterator.next());
+		}
+		
+		iterator.next();
+		iterator.remove();
+	}
+}
+
+```
+
