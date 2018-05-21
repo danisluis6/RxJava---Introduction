@@ -317,4 +317,92 @@ public class Main {
 }
 
 ```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> 
 
+```java
+package upgrade;
+
+@SuppressWarnings("all")
+public class Shape {
+	private int id;
+	private String name;
+	
+	Shape(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+	
+	@Override
+	public String toString() {
+		return name;
+	}
+}
+
+package upgrade;
+
+@SuppressWarnings("all")
+public class ShapeStorage {
+
+	private Shape[] shapes = { new Shape(1, "Rectangle"),
+			new Shape(2, "Square"), new Shape(3, "Circle"),
+			new Shape(4, "Triangle") };
+
+	public Iterator getShaIterator() {
+		return new ShapeInterator();
+	}
+	
+	interface Iterator {
+		
+		boolean hasNext();
+
+		Object next();
+
+		void remove();
+	}
+
+	class ShapeInterator implements Iterator {
+
+		private int index = 0;
+
+		public boolean hasNext() {
+			if (index < shapes.length) {
+				return true;
+			}
+			return false;
+		}
+
+		public Shape next() {
+			if (this.hasNext()) {
+				return shapes[index++];
+			}
+			return null;
+		}
+
+		public void remove() {
+			for (int i = index - 1; i < shapes.length - 1; i++) {
+				shapes[i] = shapes[i + 1];
+			}
+			shapes[shapes.length - 1] = null;
+		}
+	}
+}
+
+package upgrade;
+
+import upgrade.ShapeStorage.Iterator;
+
+
+@SuppressWarnings("all")
+public class Main {
+	public static void main(String[] args) {
+		// Create an iterator to iterate through this collection
+		ShapeStorage shapeStorage = new ShapeStorage();
+	      for(Iterator iter = shapeStorage.getShaIterator(); iter.hasNext();){
+	         Shape shape = (Shape)iter.next();
+	         System.out.println(shape.toString());
+	      }   
+	}
+}
+
+
+```
