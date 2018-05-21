@@ -3,8 +3,6 @@ package com.example.lorence.rxtutorial;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import rx.Observable;
-
 public class HomeActivity extends AppCompatActivity {
 
     @Override
@@ -12,6 +10,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Obser
+
+
     }
 }
