@@ -180,3 +180,60 @@ public class IteratorExample {
 }
 ```
 <img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Upgrade level 1
+```java
+package upgrade;
+
+@SuppressWarnings("all")
+public class Shape {
+	private int id;
+	private String name;
+	
+	Shape(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+	
+	@Override
+	public String toString() {
+		return name;
+	}
+}
+
+package upgrade;
+
+@SuppressWarnings("all")
+public class Main {
+	public static void main(String[] args) {
+		Shape rectangle = new Shape(1, "Rectangle");
+		Shape square = new Shape(2, "Square");
+		Shape circle = new Shape(3, "Circle");
+		Shape triangle = new Shape(4, "Triangle");
+		
+		ShapeStorage shapeStorage = new ShapeStorage();
+		shapeStorage.add(rectangle);
+		shapeStorage.add(square);
+		shapeStorage.add(circle);
+		shapeStorage.add(triangle);
+		
+		// Create an iterator to iterate through this collection
+	}
+}
+
+package upgrade;
+
+@SuppressWarnings("all")
+public class ShapeStorage {
+
+	private Shape[] shapes = new Shape[4];
+	private int index = 0;
+	
+	public void add(Shape shape) {
+		shapes[index] = shape;
+		index++;
+	}
+
+}
+
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Upgrade level 2
+### <b>Create an iterator to iterate through this collection</b>
