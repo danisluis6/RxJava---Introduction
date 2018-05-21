@@ -2,16 +2,13 @@ package com.example.lorence.rxtutorial;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import io.reactivex.Flowable;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.annotations.NonNull;
-import io.reactivex.functions.Consumer;
-import io.reactivex.schedulers.Schedulers;
+import io.reactivex.Observable;
+import io.reactivex.ObservableEmitter;
+import io.reactivex.ObservableOnSubscribe;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -20,21 +17,19 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Flowable<List<Node>> flowable = Flowable.fromArray(testGetNodes());
-        /**
-         * - subscribeOn:
-         * + Register Asynchronously
-         * + Parameter is passed
-         * ++ Schedulers:
-         */
-        flowable.subscribeOn(Schedulers.io()).
-                observeOn(AndroidSchedulers.mainThread()).
-                subscribe(new Consumer<List<Node>>() {
-
-                    @Override
-                    public void accept(@NonNull List<Node> nodes) throws Exception {
-                        Log.i("TAG", nodes.get(0).getName());
+        Observable<Node> observable = Observable.create(new ObservableOnSubscribe<Node>() {
+            @Override
+            public void subscribe(ObservableEmitter<Node> emitter) throws Exception {
+                try {
+                    List<Node> nodes = testGetNodes();
+                    for (Node node : nodes) {
+                        emitter.onNext(node);
                     }
+                    emitter.onComplete();
+                } catch (Exception e) {
+                    emitter.onError(e);
+                }
+            }
         });
     }
 
