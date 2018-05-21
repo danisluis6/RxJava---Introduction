@@ -412,4 +412,34 @@ The build blocks for RxJava code are the following:
 - a set of methods for modifying and composing the data
 An observable emits items; a subscriber consumes those items.
 ![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/3.png)
+![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/4.png)
+
+### Flowable<T>
+	
+```java
+public class HomeActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
+
+        Flowable<List<Node>> flowable = Flowable.fromArray(testGetNodes());
+        flowable.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Consumer<List<Node>>() {
+            @Override
+            public void accept(@NonNull List<Node> nodes) throws Exception {
+                Log.i("TAG", nodes.get(0).getName());
+            }
+        });
+    }
+
+    private List<Node> testGetNodes() {
+        ArrayList<Node> list = new ArrayList<>();
+        list.add(new Node(1, "Math"));
+        list.add(new Node(2, "English"));
+        list.add(new Node(3, "Geography"));
+        list.add(new Node(4, "History"));
+        return list;
+    }
+}
+```
 
