@@ -442,4 +442,41 @@ public class HomeActivity extends AppCompatActivity {
     }
 }
 ```
+#### subscribeOn
+![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/5.png)
+- <b>subscribeOn</b>: Register Asynchronously 
+#### Schedulers.io
+This Scheduler is similar to the newThread except for the fact that already started threads are recycled and can possibly handle future requests.
 
+This implementation works similarly to ThreadPoolExecutor from java.util.concurrent with an unbounded pool of threads. Every time a new worker is requested, either a new thread is started (and later kept idle for some time) or the idle one is reused:
+Readmore here: http://www.baeldung.com/rxjava-schedulers
+```java
+Flowable<List<Node>> flowable = Flowable.fromArray(testGetNodes());
+        flowable.subscribeOn(Schedulers.io()).
+                observeOn(AndroidSchedulers.mainThread()).
+                subscribe(new Consumer<List<Node>>() {
+
+                    @Override
+                    public void accept(@NonNull List<Node> nodes) throws Exception {
+                        Log.i("TAG", nodes.get(0).getName());
+                    }
+                });
+```
+<img src = "https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/x.png" width="75px" height="40px"/> Continue with <b>Observable.create</b>
+![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/6.png)
+```java
+Observable<Node> observable = Observable.create(new ObservableOnSubscribe<Node>() {
+            @Override
+            public void subscribe(ObservableEmitter<Node> emitter) throws Exception {
+                try {
+                    List<Node> nodes = testGetNodes();
+                    for (Node node : nodes) {
+                        emitter.onNext(node);
+                    }
+                    emitter.onComplete();
+                } catch (Exception e) {
+                    emitter.onError(e);
+                }
+            }
+        });
+```
