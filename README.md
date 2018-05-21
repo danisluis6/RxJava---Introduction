@@ -412,4 +412,7 @@ The build blocks for RxJava code are the following:
 - a set of methods for modifying and composing the data
 An observable emits items; a subscriber consumes those items.
 ![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/3.png)
+![alt text](https://github.com/danisluis6/RxJava-Introduction/blob/level_research_reactive/Deeply/4.png)
+### Flowable<T>
+
 
