@@ -15,6 +15,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/HomeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/HomeActivity.java" />
     </list>
@@ -64,12 +65,14 @@
       <file leaf-file-name="HomeActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/HomeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="32" selection-end-column="11" />
+            <state relative-caret-position="849">
+              <caret line="92" column="103" lean-forward="false" selection-start-line="92" selection-start-column="103" selection-end-line="92" selection-end-column="103" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#559#1057#0" expanded="true" />
-                <element signature="e#1056#1057#0" expanded="true" />
+                <element signature="e#757#1308#0" expanded="true" />
+                <element signature="e#1307#1308#0" expanded="true" />
+                <element signature="e#1367#1865#0" expanded="true" />
+                <element signature="e#1864#1865#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2168,10 +2171,12 @@
     <property name="device.picker.selection" value="RQ3002E9SP" />
     <property name="settings.editor.selected.configurable" value="gradle.compiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EnglishApp" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/SimpleProject" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1525313904230" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="2.3.3" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi" />
+    <property name="android.project.structure.last.selected" value="app" />
+    <property name="android.project.structure.proportion" value="0.15" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -2267,7 +2272,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526893971410" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526898575182" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2314,7 +2319,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526893971410" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1526898575182" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2709,14 +2714,14 @@
         <state relative-caret-position="45">
           <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding>
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="false" />
+            <element signature="e#255#256#0" expanded="false" />
+            <element signature="e#288#289#0" expanded="false" />
+            <element signature="e#316#317#0" expanded="false" />
+            <element signature="e#347#348#0" expanded="false" />
+            <element signature="e#379#380#0" expanded="false" />
+            <element signature="e#419#420#0" expanded="false" />
+            <element signature="e#451#452#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2790,12 +2795,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/lorence/rxtutorial/HomeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="32" selection-end-column="11" />
+        <state relative-caret-position="849">
+          <caret line="92" column="103" lean-forward="false" selection-start-line="92" selection-start-column="103" selection-end-line="92" selection-end-column="103" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#559#1057#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
+            <element signature="e#757#1308#0" expanded="true" />
+            <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="e#1367#1865#0" expanded="true" />
+            <element signature="e#1864#1865#0" expanded="true" />
           </folding>
         </state>
       </provider>
