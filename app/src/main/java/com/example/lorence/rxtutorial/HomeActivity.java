@@ -91,5 +91,6 @@ public class HomeActivity extends AppCompatActivity {
  * Link 1: http://www.vogella.com/tutorials/RxJava/article.html#disposing-subscriptions-and-using-compositedisposable
  * Link 2: https://android.jlelse.eu/reactive-programming-for-android-d55bdbb438b4
  * Link 3: https://medium.com/@fabioCollini/testing-asynchronous-rxjava-code-using-mockito-8ad831a16877
+ * Link 4: https://blog.gojekengineering.com/multi-threading-like-a-boss-in-android-with-rxjava-2-b8b7cf6eb5e2
  */
 
